@@ -1,0 +1,299 @@
+[2017-11-29.16:55:42] [Server thread/INFO]: Starting minecraft server version 1.8.8
+[2017-11-29.16:55:42] [Server thread/INFO]: Loading properties
+[2017-11-29.16:55:42] [Server thread/INFO]: Default game type: SURVIVAL
+[2017-11-29.16:55:42] [Server thread/INFO]: This server is running CraftBukkit version git-Spigot-db6de12-18fbb24 (MC: 1.8.8) (Implementing API version 1.8.8-R0.1-SNAPSHOT)
+[2017-11-29.16:55:42] [Server thread/INFO]: Debug logging is disabled
+[2017-11-29.16:55:42] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[2017-11-29.16:55:42] [Server thread/INFO]: Using 4 threads for Netty based IO
+[2017-11-29.16:55:42] [Server thread/INFO]: Generating keypair
+[2017-11-29.16:55:42] [Server thread/INFO]: Starting Minecraft server on *:25565
+[2017-11-29.16:55:42] [Main thread/INFO]: Using epoll channel type
+[2017-11-29.16:55:43] [Server thread/WARN]: Plugin `Administration_Panel v1.1.0' uses the space-character (0x20) in its name `Administration Panel' - this is discouraged
+[2017-11-29.16:55:43] [Main thread/ERROR]: Could not load 'plugins/EssentialsSpawn-2.x-SNAPSHOT.jar' in folder 'plugins'
+org.bukkit.plugin.InvalidDescriptionException: Invalid plugin.yml
+        at org.bukkit.plugin.java.JavaPluginLoader.getPluginDescription(JavaPluginLoader.java:162) ~[spigot-1.8.8.jar:git-Spigot-db6de12-18fbb24]
+        at org.bukkit.plugin.SimplePluginManager.loadPlugins(SimplePluginManager.java:133) [spigot-1.8.8.jar:git-Spigot-db6de12-18fbb24]
+        at org.bukkit.craftbukkit.v1_8_R3.CraftServer.loadPlugins(CraftServer.java:292) [spigot-1.8.8.jar:git-Spigot-db6de12-18fbb24]
+        at net.minecraft.server.v1_8_R3.DedicatedServer.init(DedicatedServer.java:198) [spigot-1.8.8.jar:git-Spigot-db6de12-18fbb24]
+        at net.minecraft.server.v1_8_R3.MinecraftServer.run(MinecraftServer.java:525) [spigot-1.8.8.jar:git-Spigot-db6de12-18fbb24]
+        at java.lang.Thread.run(Thread.java:745) [?:1.7.0_85]
+Caused by: java.util.zip.ZipException: zip file is empty
+        at java.util.zip.ZipFile.open(Native Method) ~[?:1.7.0_85]
+        at java.util.zip.ZipFile.<init>(ZipFile.java:215) ~[?:1.7.0_85]
+        at java.util.zip.ZipFile.<init>(ZipFile.java:145) ~[?:1.7.0_85]
+        at java.util.jar.JarFile.<init>(JarFile.java:154) ~[?:1.7.0_85]
+        at java.util.jar.JarFile.<init>(JarFile.java:118) ~[?:1.7.0_85]
+        at org.bukkit.plugin.java.JavaPluginLoader.getPluginDescription(JavaPluginLoader.java:150) ~[spigot-1.8.8.jar:git-Spigot-db6de12-18fbb24]
+        ... 5 more
+[2017-11-29.16:55:43] [Server thread/ERROR]: Could not load 'plugins/figadmin.jar' in folder 'plugins'
+org.bukkit.plugin.InvalidDescriptionException: Invalid plugin.yml
+        at org.bukkit.plugin.java.JavaPluginLoader.getPluginDescription(JavaPluginLoader.java:162) ~[spigot-1.8.8.jar:git-Spigot-db6de12-18fbb24]
+        at org.bukkit.plugin.SimplePluginManager.loadPlugins(SimplePluginManager.java:133) [spigot-1.8.8.jar:git-Spigot-db6de12-18fbb24]
+        at org.bukkit.craftbukkit.v1_8_R3.CraftServer.loadPlugins(CraftServer.java:292) [spigot-1.8.8.jar:git-Spigot-db6de12-18fbb24]
+        at net.minecraft.server.v1_8_R3.DedicatedServer.init(DedicatedServer.java:198) [spigot-1.8.8.jar:git-Spigot-db6de12-18fbb24]
+        at net.minecraft.server.v1_8_R3.MinecraftServer.run(MinecraftServer.java:525) [spigot-1.8.8.jar:git-Spigot-db6de12-18fbb24]
+        at java.lang.Thread.run(Thread.java:745) [?:1.7.0_85]
+Caused by: java.util.zip.ZipException: error in opening zip file
+        at java.util.zip.ZipFile.open(Native Method) ~[?:1.7.0_85]
+        at java.util.zip.ZipFile.<init>(ZipFile.java:215) ~[?:1.7.0_85]
+        at java.util.zip.ZipFile.<init>(ZipFile.java:145) ~[?:1.7.0_85]
+        at java.util.jar.JarFile.<init>(JarFile.java:154) ~[?:1.7.0_85]
+        at java.util.jar.JarFile.<init>(JarFile.java:118) ~[?:1.7.0_85]
+        at org.bukkit.plugin.java.JavaPluginLoader.getPluginDescription(JavaPluginLoader.java:150) ~[spigot-1.8.8.jar:git-Spigot-db6de12-18fbb24]
+        ... 5 more
+[2017-11-29.16:55:43] [Main thread/ERROR]: Ambiguous plugin name `PermissionsEx' for files `plugins/PermissionsEx.jar' and `plugins/PermissionsEx-1.23.4.jar' in `plugins'
+[2017-11-29.16:55:43] [Server thread/INFO]: Set PluginClassLoader as parallel capable
+[2017-11-29.16:55:43] [Main thread/ERROR]: Could not load 'plugins/test_plug.jar' in folder 'plugins'
+org.bukkit.plugin.InvalidPluginException: java.lang.UnsupportedClassVersionError: ru/yan/test_plug/test_plug : Unsupported major.minor version 52.0        at org.bukkit.plugin.java.JavaPluginLoader.loadPlugin(JavaPluginLoader.java:135) ~[spigot-1.8.8.jar:git-Spigot-db6de12-18fbb24]
+        at org.bukkit.plugin.SimplePluginManager.loadPlugin(SimplePluginManager.java:329) ~[spigot-1.8.8.jar:git-Spigot-db6de12-18fbb24]
+        at org.bukkit.plugin.SimplePluginManager.loadPlugins(SimplePluginManager.java:251) [spigot-1.8.8.jar:git-Spigot-db6de12-18fbb24]
+        at org.bukkit.craftbukkit.v1_8_R3.CraftServer.loadPlugins(CraftServer.java:292) [spigot-1.8.8.jar:git-Spigot-db6de12-18fbb24]
+        at net.minecraft.server.v1_8_R3.DedicatedServer.init(DedicatedServer.java:198) [spigot-1.8.8.jar:git-Spigot-db6de12-18fbb24]
+        at net.minecraft.server.v1_8_R3.MinecraftServer.run(MinecraftServer.java:525) [spigot-1.8.8.jar:git-Spigot-db6de12-18fbb24]
+        at java.lang.Thread.run(Thread.java:745) [?:1.7.0_85]
+Caused by: java.lang.UnsupportedClassVersionError: ru/yan/test_plug/test_plug : Unsupported major.minor version 52.0
+        at java.lang.ClassLoader.defineClass1(Native Method) ~[?:1.7.0_85]
+        at java.lang.ClassLoader.defineClass(ClassLoader.java:800) ~[?:1.7.0_85]
+        at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:142) ~[?:1.7.0_85]
+        at java.net.URLClassLoader.defineClass(URLClassLoader.java:449) ~[?:1.7.0_85]
+        at java.net.URLClassLoader.access$100(URLClassLoader.java:71) ~[?:1.7.0_85]
+        at java.net.URLClassLoader$1.run(URLClassLoader.java:361) ~[?:1.7.0_85]
+        at java.net.URLClassLoader$1.run(URLClassLoader.java:355) ~[?:1.7.0_85]
+        at java.security.AccessController.doPrivileged(Native Method) ~[?:1.7.0_85]
+        at java.net.URLClassLoader.findClass(URLClassLoader.java:354) ~[?:1.7.0_85]
+        at org.bukkit.plugin.java.PluginClassLoader.findClass(PluginClassLoader.java:101) ~[spigot-1.8.8.jar:git-Spigot-db6de12-18fbb24]
+        at org.bukkit.plugin.java.PluginClassLoader.findClass(PluginClassLoader.java:86) ~[spigot-1.8.8.jar:git-Spigot-db6de12-18fbb24]
+        at java.lang.ClassLoader.loadClass(ClassLoader.java:425) ~[?:1.7.0_85]
+        at java.lang.ClassLoader.loadClass(ClassLoader.java:358) ~[?:1.7.0_85]
+        at java.lang.Class.forName0(Native Method) ~[?:1.7.0_85]
+        at java.lang.Class.forName(Class.java:278) ~[?:1.7.0_85]
+        at org.bukkit.plugin.java.PluginClassLoader.<init>(PluginClassLoader.java:64) ~[spigot-1.8.8.jar:git-Spigot-db6de12-18fbb24]
+        at org.bukkit.plugin.java.JavaPluginLoader.loadPlugin(JavaPluginLoader.java:131) ~[spigot-1.8.8.jar:git-Spigot-db6de12-18fbb24]
+        ... 6 more
+[2017-11-29.16:55:43] [Server thread/ERROR]: Could not load 'plugins/RogueParkour.jar' in folder 'plugins'
+org.bukkit.plugin.InvalidPluginException: java.lang.UnsupportedClassVersionError: cl/omegacraft/kledioz/rparkour/Main : Unsupported major.minor version 52.0
+        at org.bukkit.plugin.java.JavaPluginLoader.loadPlugin(JavaPluginLoader.java:135) ~[spigot-1.8.8.jar:git-Spigot-db6de12-18fbb24]
+        at org.bukkit.plugin.SimplePluginManager.loadPlugin(SimplePluginManager.java:329) ~[spigot-1.8.8.jar:git-Spigot-db6de12-18fbb24]
+        at org.bukkit.plugin.SimplePluginManager.loadPlugins(SimplePluginManager.java:251) [spigot-1.8.8.jar:git-Spigot-db6de12-18fbb24]
+        at org.bukkit.craftbukkit.v1_8_R3.CraftServer.loadPlugins(CraftServer.java:292) [spigot-1.8.8.jar:git-Spigot-db6de12-18fbb24]
+        at net.minecraft.server.v1_8_R3.DedicatedServer.init(DedicatedServer.java:198) [spigot-1.8.8.jar:git-Spigot-db6de12-18fbb24]
+        at net.minecraft.server.v1_8_R3.MinecraftServer.run(MinecraftServer.java:525) [spigot-1.8.8.jar:git-Spigot-db6de12-18fbb24]
+        at java.lang.Thread.run(Thread.java:745) [?:1.7.0_85]
+Caused by: java.lang.UnsupportedClassVersionError: cl/omegacraft/kledioz/rparkour/Main : Unsupported major.minor version 52.0
+        at java.lang.ClassLoader.defineClass1(Native Method) ~[?:1.7.0_85]
+        at java.lang.ClassLoader.defineClass(ClassLoader.java:800) ~[?:1.7.0_85]
+        at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:142) ~[?:1.7.0_85]
+        at java.net.URLClassLoader.defineClass(URLClassLoader.java:449) ~[?:1.7.0_85]
+        at java.net.URLClassLoader.access$100(URLClassLoader.java:71) ~[?:1.7.0_85]
+        at java.net.URLClassLoader$1.run(URLClassLoader.java:361) ~[?:1.7.0_85]
+        at java.net.URLClassLoader$1.run(URLClassLoader.java:355) ~[?:1.7.0_85]
+        at java.security.AccessController.doPrivileged(Native Method) ~[?:1.7.0_85]
+        at java.net.URLClassLoader.findClass(URLClassLoader.java:354) ~[?:1.7.0_85]
+        at org.bukkit.plugin.java.PluginClassLoader.findClass(PluginClassLoader.java:101) ~[spigot-1.8.8.jar:git-Spigot-db6de12-18fbb24]
+        at org.bukkit.plugin.java.PluginClassLoader.findClass(PluginClassLoader.java:86) ~[spigot-1.8.8.jar:git-Spigot-db6de12-18fbb24]
+        at java.lang.ClassLoader.loadClass(ClassLoader.java:425) ~[?:1.7.0_85]
+        at java.lang.ClassLoader.loadClass(ClassLoader.java:358) ~[?:1.7.0_85]
+        at java.lang.Class.forName0(Native Method) ~[?:1.7.0_85]
+        at java.lang.Class.forName(Class.java:278) ~[?:1.7.0_85]
+        at org.bukkit.plugin.java.PluginClassLoader.<init>(PluginClassLoader.java:64) ~[spigot-1.8.8.jar:git-Spigot-db6de12-18fbb24]
+        at org.bukkit.plugin.java.JavaPluginLoader.loadPlugin(JavaPluginLoader.java:131) ~[spigot-1.8.8.jar:git-Spigot-db6de12-18fbb24]
+        ... 6 more
+[2017-11-29.16:55:43] [Server thread/ERROR]: Could not load 'plugins/CTSNC_Scoreboard-1.8.jar' in folder 'plugins'
+org.bukkit.plugin.UnknownDependencyException: TTA
+        at org.bukkit.plugin.SimplePluginManager.loadPlugins(SimplePluginManager.java:219) [spigot-1.8.8.jar:git-Spigot-db6de12-18fbb24]
+        at org.bukkit.craftbukkit.v1_8_R3.CraftServer.loadPlugins(CraftServer.java:292) [spigot-1.8.8.jar:git-Spigot-db6de12-18fbb24]
+        at net.minecraft.server.v1_8_R3.DedicatedServer.init(DedicatedServer.java:198) [spigot-1.8.8.jar:git-Spigot-db6de12-18fbb24]
+        at net.minecraft.server.v1_8_R3.MinecraftServer.run(MinecraftServer.java:525) [spigot-1.8.8.jar:git-Spigot-db6de12-18fbb24]
+        at java.lang.Thread.run(Thread.java:745) [?:1.7.0_85]
+[2017-11-29.16:55:43] [Server thread/ERROR]: Could not load 'plugins/trollboss.jar' in folder 'plugins'
+org.bukkit.plugin.InvalidPluginException: java.lang.UnsupportedClassVersionError: main/Main : Unsupported major.minor version 52.0
+        at org.bukkit.plugin.java.JavaPluginLoader.loadPlugin(JavaPluginLoader.java:135) ~[spigot-1.8.8.jar:git-Spigot-db6de12-18fbb24]
+        at org.bukkit.plugin.SimplePluginManager.loadPlugin(SimplePluginManager.java:329) ~[spigot-1.8.8.jar:git-Spigot-db6de12-18fbb24]
+        at org.bukkit.plugin.SimplePluginManager.loadPlugins(SimplePluginManager.java:251) [spigot-1.8.8.jar:git-Spigot-db6de12-18fbb24]
+        at org.bukkit.craftbukkit.v1_8_R3.CraftServer.loadPlugins(CraftServer.java:292) [spigot-1.8.8.jar:git-Spigot-db6de12-18fbb24]
+        at net.minecraft.server.v1_8_R3.DedicatedServer.init(DedicatedServer.java:198) [spigot-1.8.8.jar:git-Spigot-db6de12-18fbb24]
+        at net.minecraft.server.v1_8_R3.MinecraftServer.run(MinecraftServer.java:525) [spigot-1.8.8.jar:git-Spigot-db6de12-18fbb24]
+        at java.lang.Thread.run(Thread.java:745) [?:1.7.0_85]
+Caused by: java.lang.UnsupportedClassVersionError: main/Main : Unsupported major.minor version 52.0
+        at java.lang.ClassLoader.defineClass1(Native Method) ~[?:1.7.0_85]
+        at java.lang.ClassLoader.defineClass(ClassLoader.java:800) ~[?:1.7.0_85]
+        at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:142) ~[?:1.7.0_85]
+        at java.net.URLClassLoader.defineClass(URLClassLoader.java:449) ~[?:1.7.0_85]
+        at java.net.URLClassLoader.access$100(URLClassLoader.java:71) ~[?:1.7.0_85]
+        at java.net.URLClassLoader$1.run(URLClassLoader.java:361) ~[?:1.7.0_85]
+        at java.net.URLClassLoader$1.run(URLClassLoader.java:355) ~[?:1.7.0_85]
+        at java.security.AccessController.doPrivileged(Native Method) ~[?:1.7.0_85]
+        at java.net.URLClassLoader.findClass(URLClassLoader.java:354) ~[?:1.7.0_85]
+        at org.bukkit.plugin.java.PluginClassLoader.findClass(PluginClassLoader.java:101) ~[spigot-1.8.8.jar:git-Spigot-db6de12-18fbb24]
+        at org.bukkit.plugin.java.PluginClassLoader.findClass(PluginClassLoader.java:86) ~[spigot-1.8.8.jar:git-Spigot-db6de12-18fbb24]
+        at java.lang.ClassLoader.loadClass(ClassLoader.java:425) ~[?:1.7.0_85]
+        at java.lang.ClassLoader.loadClass(ClassLoader.java:358) ~[?:1.7.0_85]
+        at java.lang.Class.forName0(Native Method) ~[?:1.7.0_85]
+        at java.lang.Class.forName(Class.java:278) ~[?:1.7.0_85]
+        at org.bukkit.plugin.java.PluginClassLoader.<init>(PluginClassLoader.java:64) ~[spigot-1.8.8.jar:git-Spigot-db6de12-18fbb24]
+        at org.bukkit.plugin.java.JavaPluginLoader.loadPlugin(JavaPluginLoader.java:131) ~[spigot-1.8.8.jar:git-Spigot-db6de12-18fbb24]
+        ... 6 more
+[2017-11-29.16:55:43] [Server thread/INFO]: [INFO][NoCheatPlus] Wed Nov 29 16:55:43 MSK 2017
+[2017-11-29.16:55:43] [Server thread/INFO]: Player instances are stored for efficiency.
+[2017-11-29.16:55:43] [Server thread/ERROR]: Could not load 'plugins/blockversion.jar' in folder 'plugins'
+org.bukkit.plugin.UnknownDependencyException: ProtocolSupport
+        at org.bukkit.plugin.SimplePluginManager.loadPlugins(SimplePluginManager.java:219) [spigot-1.8.8.jar:git-Spigot-db6de12-18fbb24]
+        at org.bukkit.craftbukkit.v1_8_R3.CraftServer.loadPlugins(CraftServer.java:292) [spigot-1.8.8.jar:git-Spigot-db6de12-18fbb24]
+        at net.minecraft.server.v1_8_R3.DedicatedServer.init(DedicatedServer.java:198) [spigot-1.8.8.jar:git-Spigot-db6de12-18fbb24]
+        at net.minecraft.server.v1_8_R3.MinecraftServer.run(MinecraftServer.java:525) [spigot-1.8.8.jar:git-Spigot-db6de12-18fbb24]
+        at java.lang.Thread.run(Thread.java:745) [?:1.7.0_85]
+[2017-11-29.16:55:43] [Server thread/ERROR]: Could not load 'plugins/RandomPort.jar' in folder 'plugins'
+org.bukkit.plugin.InvalidPluginException: java.lang.UnsupportedClassVersionError: com/yahoo/bertasiguy2/RandomPort : Unsupported major.minor version 52.0
+        at org.bukkit.plugin.java.JavaPluginLoader.loadPlugin(JavaPluginLoader.java:135) ~[spigot-1.8.8.jar:git-Spigot-db6de12-18fbb24]
+        at org.bukkit.plugin.SimplePluginManager.loadPlugin(SimplePluginManager.java:329) ~[spigot-1.8.8.jar:git-Spigot-db6de12-18fbb24]
+        at org.bukkit.plugin.SimplePluginManager.loadPlugins(SimplePluginManager.java:251) [spigot-1.8.8.jar:git-Spigot-db6de12-18fbb24]
+        at org.bukkit.craftbukkit.v1_8_R3.CraftServer.loadPlugins(CraftServer.java:292) [spigot-1.8.8.jar:git-Spigot-db6de12-18fbb24]
+        at net.minecraft.server.v1_8_R3.DedicatedServer.init(DedicatedServer.java:198) [spigot-1.8.8.jar:git-Spigot-db6de12-18fbb24]
+        at net.minecraft.server.v1_8_R3.MinecraftServer.run(MinecraftServer.java:525) [spigot-1.8.8.jar:git-Spigot-db6de12-18fbb24]
+        at java.lang.Thread.run(Thread.java:745) [?:1.7.0_85]
+Caused by: java.lang.UnsupportedClassVersionError: com/yahoo/bertasiguy2/RandomPort : Unsupported major.minor version 52.0
+        at java.lang.ClassLoader.defineClass1(Native Method) ~[?:1.7.0_85]
+        at java.lang.ClassLoader.defineClass(ClassLoader.java:800) ~[?:1.7.0_85]
+        at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:142) ~[?:1.7.0_85]
+        at java.net.URLClassLoader.defineClass(URLClassLoader.java:449) ~[?:1.7.0_85]
+        at java.net.URLClassLoader.access$100(URLClassLoader.java:71) ~[?:1.7.0_85]
+        at java.net.URLClassLoader$1.run(URLClassLoader.java:361) ~[?:1.7.0_85]
+        at java.net.URLClassLoader$1.run(URLClassLoader.java:355) ~[?:1.7.0_85]
+        at java.security.AccessController.doPrivileged(Native Method) ~[?:1.7.0_85]
+        at java.net.URLClassLoader.findClass(URLClassLoader.java:354) ~[?:1.7.0_85]
+        at org.bukkit.plugin.java.PluginClassLoader.findClass(PluginClassLoader.java:101) ~[spigot-1.8.8.jar:git-Spigot-db6de12-18fbb24]
+        at org.bukkit.plugin.java.PluginClassLoader.findClass(PluginClassLoader.java:86) ~[spigot-1.8.8.jar:git-Spigot-db6de12-18fbb24]
+        at java.lang.ClassLoader.loadClass(ClassLoader.java:425) ~[?:1.7.0_85]
+        at java.lang.ClassLoader.loadClass(ClassLoader.java:358) ~[?:1.7.0_85]
+        at java.lang.Class.forName0(Native Method) ~[?:1.7.0_85]
+        at java.lang.Class.forName(Class.java:278) ~[?:1.7.0_85]
+        at org.bukkit.plugin.java.PluginClassLoader.<init>(PluginClassLoader.java:64) ~[spigot-1.8.8.jar:git-Spigot-db6de12-18fbb24]
+        at org.bukkit.plugin.java.JavaPluginLoader.loadPlugin(JavaPluginLoader.java:131) ~[spigot-1.8.8.jar:git-Spigot-db6de12-18fbb24]
+        ... 6 more
+[2017-11-29.16:55:43] [Server thread/INFO]: [ServerProtector] Loading ServerProtector v1.0
+[2017-11-29.16:55:43] [Server thread/INFO]: [DynPad] Loading DynPad v1.4
+[2017-11-29.16:55:43] [Server thread/INFO]: [SkinsRestorer] Loading SkinsRestorer v10.5.9
+[2017-11-29.16:55:43] [Server thread/INFO]: [Vault] Loading Vault v1.5.6-b49
+[2017-11-29.16:55:43] [Server thread/INFO]: [Multiverse-Core] Loading Multiverse-Core v2.5-b719
+[2017-11-29.16:55:43] [Server thread/INFO]: [ViaVersion] Loading ViaVersion v1.2.0
+[2017-11-29.16:55:43] [Server thread/INFO]: [ViaVersion] ViaVersion 1.2.0 is now loaded, injecting!
+[2017-11-29.16:55:43] [Server thread/INFO]: [Tablist] Loading Tablist v1.2.3.7
+[2017-11-29.16:55:43] [Server thread/INFO]: [Chairs] Loading Chairs v4.6
+[2017-11-29.16:55:43] [Server thread/INFO]: [Administration_Panel] Loading Administration_Panel v1.1.0
+[2017-11-29.16:55:43] [Server thread/INFO]: [AutoMessage] Loading AutoMessage v2.5.5
+[2017-11-29.16:55:43] [Server thread/INFO]: [RandomTeleport] Loading RandomTeleport v5.0.0
+[2017-11-29.16:55:43] [Server thread/INFO]: [AntiAd] Loading AntiAd v2.3.4
+[2017-11-29.16:55:43] [Server thread/INFO]: [ChestCommands] Loading ChestCommands v2.2.3
+[2017-11-29.16:55:43] [Server thread/INFO]: [GamenixText] Loading GamenixText v1.3
+[2017-11-29.16:55:43] [Server thread/INFO]: [HolographicDisplays] Loading HolographicDisplays v2.2.1
+[2017-11-29.16:55:43] [Server thread/INFO]: [TimTheEnchanter] Loading TimTheEnchanter v2.0
+[2017-11-29.16:55:43] [Server thread/INFO]: [UralClans] Loading UralClans v1.0
+[2017-11-29.16:55:43] [Server thread/INFO]: [Jobs] Loading Jobs v2.8.5
+[2017-11-29.16:55:43] [Server thread/INFO]: [HideStream] Loading HideStream v3.1
+[2017-11-29.16:55:43] [Server thread/INFO]: [SmokeTrail] Loading SmokeTrail v8.0
+[2017-11-29.16:55:43] [Server thread/INFO]: [NoCheatPlus] Loading NoCheatPlus v3.13.7-RC-sMD5NET-b925
+[2017-11-29.16:55:43] [Server thread/INFO]: onLoad: Early set up of static API, configuration, logging.
+[2017-11-29.16:55:43] [Server thread/INFO]: [NoCheatPlus] Logging system initialized.
+[2017-11-29.16:55:43] [Server thread/INFO]: [NoCheatPlus] Detected Minecraft version: 1.8.8
+[2017-11-29.16:55:43] [Server thread/INFO]: [WorldEdit] Loading WorldEdit v6.1
+[2017-11-29.16:55:43] [Server thread/INFO]: [VIPSlots] Loading VIPSlots v1.0
+[2017-11-29.16:55:43] [Server thread/INFO]: [DonateJoin] Loading DonateJoin v1.0
+[2017-11-29.16:55:43] [Server thread/INFO]: [OPSRegion] Loading OPSRegion v1.0
+[2017-11-29.16:55:43] [Server thread/INFO]: [AntiBotUltra] Loading AntiBotUltra v7.1
+[2017-11-29.16:55:43] [Server thread/INFO]: [PermissionsEx] Loading PermissionsEx v1.23.4
+[2017-11-29.16:55:43] [Server thread/WARN]: [PermissionsEx] This server is in offline mode. Unless this server is configured to integrate with a supported proxy (see http://dft.ba/-8ous), UUIDs *may not be stable*!
+[2017-11-29.16:55:43] [Server thread/INFO]: [HealthBar] Loading HealthBar v1.8.3
+[2017-11-29.16:55:43] [Server thread/INFO]: [CS-CoreLib] Loading CS-CoreLib v1.5.16
+[2017-11-29.16:55:43] [Server thread/INFO]: [RainbowArmour] Loading RainbowArmour v1.0
+[2017-11-29.16:55:43] [Server thread/INFO]: [WorldGuard] Loading WorldGuard v6.1
+[2017-11-29.16:55:43] [Server thread/INFO]: [PingMOTD] Loading PingMOTD v0.7
+[2017-11-29.16:55:43] [Server thread/INFO]: [MineResetLite] Loading MineResetLite v0.3.6
+[2017-11-29.16:55:43] [Server thread/INFO]: [RandomBox] Loading RandomBox v2.1.2
+[2017-11-29.16:55:43] [Server thread/INFO]: [Marriage] Loading Marriage v1.11
+[2017-11-29.16:55:43] [Server thread/INFO]: [LokiBlocker] Loading LokiBlocker v0.5.4
+[2017-11-29.16:55:43] [Server thread/INFO]: [ColorMe] Loading ColorMe v3.8.1
+[2017-11-29.16:55:43] [Server thread/INFO]: [ClearLag] Loading ClearLag v2.9.3
+[2017-11-29.16:55:43] [Server thread/INFO]: [AutoSaveWorld] Loading AutoSaveWorld v4.14.2
+[2017-11-29.16:55:43] [Server thread/INFO]: [Essentials] Loading Essentials vTeamCity
+[2017-11-29.16:55:43] [Server thread/INFO]: [CTSNC] Loading CTSNC v11.7
+[2017-11-29.16:55:43] [Server thread/INFO]: [AncientGates] Loading AncientGates v2.0.6
+[2017-11-29.16:55:43] [Server thread/INFO]: [ColoredTags] Loading ColoredTags v2.1.1
+[2017-11-29.16:55:43] [Server thread/INFO]: [ChatManager] Loading ChatManager v1.19.1
+[2017-11-29.16:55:43] [Server thread/INFO]: [EssentialsSpawn] Loading EssentialsSpawn vTeamCity
+[2017-11-29.16:55:43] [Server thread/INFO]: [AuthMe] Loading AuthMe v3.4
+[2017-11-29.16:55:43] [Server thread/INFO]: [SkinsRestorer] Enabling SkinsRestorer v10.5.9
+[2017-11-29.16:55:44] [Server thread/INFO]: [SkinsRestorer] Loaded Skin Factory for v1_8_R3
+[2017-11-29.16:55:44] [Server thread/INFO]: ==============================================
+[2017-11-29.16:55:44] [Server thread/INFO]:   SkinsRestorer Updater
+[2017-11-29.16:55:44] [Server thread/INFO]:  
+[2017-11-29.16:55:44] [Server thread/INFO]:     You are running v10.5.9
+[2017-11-29.16:55:44] [Server thread/INFO]:     The latest version of SkinsRestorer!
+[2017-11-29.16:55:44] [Server thread/INFO]:  
+[2017-11-29.16:55:44] [Server thread/INFO]: ==============================================
+[2017-11-29.16:55:44] [Server thread/INFO]: [Vault] Enabling Vault v1.5.6-b49
+[2017-11-29.16:55:44] [Server thread/INFO]: [Vault] [Economy] Essentials Economy found: Waiting
+[2017-11-29.16:55:44] [Server thread/INFO]: [Vault] [Permission] PermissionsEx found: Waiting
+[2017-11-29.16:55:44] [Server thread/INFO]: [Vault] [Permission] SuperPermissions loaded as backup permission system.
+[2017-11-29.16:55:44] [Server thread/INFO]: [Vault] [Chat] PermissionsEx found: Waiting
+[2017-11-29.16:55:44] [Server thread/INFO]: [Vault] Enabled Version 1.5.6-b49
+[2017-11-29.16:55:44] [Server thread/INFO]: [AutoSaveWorld] Enabling AutoSaveWorld v4.14.2
+[2017-11-29.16:55:44] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[2017-11-29.16:55:44] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
+[2017-11-29.16:55:44] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+[2017-11-29.16:55:44] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
+[2017-11-29.16:55:44] [Server thread/INFO]: **** Beginning UUID conversion, this may take A LONG time ****
+[2017-11-29.16:55:44] [Server thread/INFO]: Preparing level "world"
+[2017-11-29.16:55:44] [Server thread/INFO]: -------- World Settings For [world] --------
+[2017-11-29.16:55:44] [Server thread/INFO]: Mob Spawn Range: 4
+[2017-11-29.16:55:44] [Server thread/INFO]: Anti X-Ray: true
+[2017-11-29.16:55:44] [Server thread/INFO]:     Engine Mode: 1
+[2017-11-29.16:55:44] [Server thread/INFO]:     Hidden Blocks: [14, 15, 16, 21, 48, 49, 54, 56, 73, 74, 82, 129, 130]
+[2017-11-29.16:55:44] [Server thread/INFO]:     Replace Blocks: [1, 5]
+[2017-11-29.16:55:44] [Server thread/INFO]: Nerfing mobs spawned from spawners: false
+[2017-11-29.16:55:44] [Server thread/INFO]: Cactus Growth Modifier: 100%
+[2017-11-29.16:55:44] [Server thread/INFO]: Cane Growth Modifier: 100%
+[2017-11-29.16:55:44] [Server thread/INFO]: Melon Growth Modifier: 100%
+[2017-11-29.16:55:44] [Server thread/INFO]: Mushroom Growth Modifier: 100%
+[2017-11-29.16:55:44] [Server thread/INFO]: Pumpkin Growth Modifier: 100%
+[2017-11-29.16:55:44] [Server thread/INFO]: Sapling Growth Modifier: 100%
+[2017-11-29.16:55:44] [Server thread/INFO]: Wheat Growth Modifier: 100%
+[2017-11-29.16:55:44] [Server thread/INFO]: NetherWart Growth Modifier: 100%
+[2017-11-29.16:55:44] [Server thread/INFO]: Entity Activation Range: An 32 / Mo 32 / Mi 16
+[2017-11-29.16:55:44] [Server thread/INFO]: Entity Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 32 / Other 64
+[2017-11-29.16:55:44] [Server thread/INFO]: Hopper Transfer: 8 Hopper Check: 8 Hopper Amount: 1
+[2017-11-29.16:55:44] [Server thread/INFO]: Random Lighting Updates: false
+[2017-11-29.16:55:44] [Server thread/INFO]: Structure Info Saving: true
+[2017-11-29.16:55:44] [Server thread/INFO]: Sending up to 10 chunks per packet
+[2017-11-29.16:55:44] [Server thread/INFO]: Max Entity Collisions: 8
+[2017-11-29.16:55:44] [Server thread/INFO]: Custom Map Seeds:  Village: 10387312 Feature: 14357617
+[2017-11-29.16:55:44] [Server thread/INFO]: Max TNT Explosions: 100
+[2017-11-29.16:55:44] [Server thread/INFO]: Tile Max Tick Time: 50ms Entity max Tick Time: 50ms
+[2017-11-29.16:55:44] [Server thread/INFO]: Item Despawn Rate: 6000
+[2017-11-29.16:55:44] [Server thread/INFO]: Item Merge Radius: 2.5
+[2017-11-29.16:55:44] [Server thread/INFO]: Arrow Despawn Rate: 1200
+[2017-11-29.16:55:44] [Server thread/INFO]: Allow Zombie Pigmen to spawn from portal blocks: true
+[2017-11-29.16:55:44] [Server thread/INFO]: View Distance: 10
+[2017-11-29.16:55:44] [Server thread/INFO]: Zombie Aggressive Towards Villager: true
+[2017-11-29.16:55:44] [Server thread/INFO]: Chunks to Grow per Tick: 650
+[2017-11-29.16:55:44] [Server thread/INFO]: Clear tick list: false
+[2017-11-29.16:55:44] [Server thread/INFO]: Experience Merge Radius: 3.0
+[2017-11-29.16:55:45] [Server thread/INFO]: -------- World Settings For [world_nether] --------
+[2017-11-29.16:55:45] [Server thread/INFO]: Mob Spawn Range: 4
+[2017-11-29.16:55:45] [Server thread/INFO]: Anti X-Ray: true
+[2017-11-29.16:55:45] [Server thread/INFO]:     Engine Mode: 1
+[2017-11-29.16:55:45] [Server thread/INFO]:     Hidden Blocks: [14, 15, 16, 21, 48, 49, 54, 56, 73, 74, 82, 129, 130]
+[2017-11-29.16:55:45] [Server thread/INFO]:     Replace Blocks: [1, 5]
+[2017-11-29.16:55:45] [Server thread/INFO]: Nerfing mobs spawned from spawners: false
+[2017-11-29.16:55:45] [Server thread/INFO]: Cactus Growth Modifier: 100%
+[2017-11-29.16:55:45] [Server thread/INFO]: Cane Growth Modifier: 100%
+[2017-11-29.16:55:45] [Server thread/INFO]: Melon Growth Modifier: 100%
+[2017-11-29.16:55:45] [Server thread/INFO]: Mushroom Growth Modifier: 100%
+[2017-11-29.16:55:45] [Server thread/INFO]: Pumpkin Growth Modifier: 100%
+[2017-11-29.16:55:45] [Server thread/INFO]: Sapling Growth Modifier: 100%
+[2017-11-29.16:55:45] [Server thread/INFO]: Wheat Growth Modifier: 100%
+[2017-11-29.16:55:45] [Server thread/INFO]: NetherWart Growth Modifier: 100%
+[2017-11-29.16:55:45] [Server thread/INFO]: Entity Activation Range: An 32 / Mo 32 / Mi 16
+[2017-11-29.16:55:45] [Server thread/INFO]: Entity Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 32 / Other 64
+[2017-11-29.16:55:45] [Server thread/INFO]: Hopper Transfer: 8 Hopper Check: 8 Hopper Amount: 1
+[2017-11-29.16:55:45] [Server thread/INFO]: Random Lighting Updates: false
+[2017-11-29.16:55:45] [Server thread/INFO]: Structure Info Saving: true
