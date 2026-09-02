@@ -1,0 +1,28 @@
+SET hive.cli.print.header=false;
+SET mapred.input.dir.recursive=true;
+SET hive.mapred.supports.subdirectories=true;
+
+USE bessmertnyjde;
+
+SELECT 
+    userInn,
+    ROUND(morning_avg) AS morning_profit,
+    ROUND(evening_avg) AS evening_profit
+FROM (
+    SELECT 
+        userInn,
+        AVG(CASE WHEN hour(from_unixtime(
+                CAST(regexp_extract(dateTime, '(\\d{13})', 1) AS BIGINT) DIV 1000
+            )) < 13 
+                 THEN totalSum END) AS morning_avg,
+        AVG(CASE WHEN hour(from_unixtime(
+                CAST(regexp_extract(dateTime, '(\\d{13})', 1) AS BIGINT) DIV 1000
+            )) >= 13 
+                 THEN totalSum END) AS evening_avg
+    FROM kkt_transactions_parquet
+    GROUP BY userInn
+) t
+WHERE morning_avg > evening_avg
+  AND morning_avg IS NOT NULL
+  AND evening_avg IS NOT NULL
+ORDER BY morning_profit;
