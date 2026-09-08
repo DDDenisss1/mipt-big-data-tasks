@@ -1,4 +1,4 @@
-# Spark Task: Shortest Path Search with BFS
+# 🔥 Spark Task: Shortest Path Search with BFS
 
 *Учебная задача курса "Хранение и обработка больших объемов данных", ФПМИ МФТИ, 2026*
 
