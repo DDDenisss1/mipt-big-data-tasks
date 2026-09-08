@@ -1,0 +1,19 @@
+[LOG] Using the ConsoleConsumer with old consumer is deprecated and will be removed in a future major release. Consider using the new consumer by passing [bootstrap-server] instead of [zookeeper].
+[LOG] SLF4J: Class path contains multiple SLF4J bindings.
+[LOG] SLF4J: Found binding in [jar:file:/opt/cloudera/parcels/KAFKA-3.0.0-1.3.0.0.p0.40/lib/kafka/libs/slf4j-log4j12-1.7.25.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+[LOG] SLF4J: Found binding in [jar:file:/opt/cloudera/parcels/KAFKA-3.0.0-1.3.0.0.p0.40/lib/kafka/libs/slf4j-log4j12-1.7.5.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+[LOG] SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+[LOG] SLF4J: Actual binding is of type [org.slf4j.impl.Log4jLoggerFactory]
+[LOG] 26/05/11 09:41:11 ERROR tools.ConsoleConsumer$: Error processing message, terminating consumer process:
+[LOG] kafka.consumer.ConsumerTimeoutException
+[LOG] at kafka.consumer.ConsumerIterator.makeNext(ConsumerIterator.scala:70)
+[LOG] at kafka.consumer.ConsumerIterator.makeNext(ConsumerIterator.scala:34)
+[LOG] at kafka.utils.IteratorTemplate.maybeComputeNext(IteratorTemplate.scala:64)
+[LOG] at kafka.utils.IteratorTemplate.hasNext(IteratorTemplate.scala:56)
+[LOG] at kafka.consumer.OldConsumer.receive(BaseConsumer.scala:137)
+[LOG] at kafka.tools.ConsoleConsumer$.process(ConsoleConsumer.scala:123)
+[LOG] at kafka.tools.ConsoleConsumer$.run(ConsoleConsumer.scala:78)
+[LOG] at kafka.tools.ConsoleConsumer$.main(ConsoleConsumer.scala:53)
+[LOG] at kafka.tools.ConsoleConsumer.main(ConsoleConsumer.scala)
+[LOG] Processed a total of 0 messages
+18
