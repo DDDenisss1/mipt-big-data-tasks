@@ -1,4 +1,4 @@
-# MapReduce Task 1: Analysis of Proper Names in Wikipedia
+# 🔥 MapReduce Task 1: Analysis of Proper Names in Wikipedia
 
 *Учебная задача курса "Хранение и обработка больших объемов данных", ФПМИ МФТИ, 2026*
 
