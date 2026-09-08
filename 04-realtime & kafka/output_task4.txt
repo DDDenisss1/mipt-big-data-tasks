@@ -1,0 +1,700 @@
+Ivy Default Cache set to: /home/hobod2026s/hobod2026s001/.ivy2/cache
+The jars for the packages stored in: /home/hobod2026s/hobod2026s001/.ivy2/jars
+:: loading settings :: url = jar:file:/usr/local/lib/python2.7/dist-packages/pyspark/jars/ivy-2.4.0.jar!/org/apache/ivy/core/settings/ivysettings.xml
+org.apache.spark#spark-streaming-kafka-0-8_2.11 added as a dependency
+:: resolving dependencies :: org.apache.spark#spark-submit-parent;1.0
+	confs: [default]
+	found org.apache.spark#spark-streaming-kafka-0-8_2.11;2.3.0 in central
+	found org.apache.kafka#kafka_2.11;0.8.2.1 in central
+	found org.scala-lang.modules#scala-xml_2.11;1.0.2 in central
+	found com.yammer.metrics#metrics-core;2.2.0 in central
+	found org.slf4j#slf4j-api;1.7.16 in central
+	found org.scala-lang.modules#scala-parser-combinators_2.11;1.0.4 in central
+	found com.101tec#zkclient;0.3 in central
+	found log4j#log4j;1.2.17 in central
+	found org.apache.kafka#kafka-clients;0.8.2.1 in central
+	found net.jpountz.lz4#lz4;1.2.0 in central
+	found org.xerial.snappy#snappy-java;1.1.2.6 in central
+	found org.spark-project.spark#unused;1.0.0 in central
+:: resolution report :: resolve 335ms :: artifacts dl 5ms
+	:: modules in use:
+	com.101tec#zkclient;0.3 from central in [default]
+	com.yammer.metrics#metrics-core;2.2.0 from central in [default]
+	log4j#log4j;1.2.17 from central in [default]
+	net.jpountz.lz4#lz4;1.2.0 from central in [default]
+	org.apache.kafka#kafka-clients;0.8.2.1 from central in [default]
+	org.apache.kafka#kafka_2.11;0.8.2.1 from central in [default]
+	org.apache.spark#spark-streaming-kafka-0-8_2.11;2.3.0 from central in [default]
+	org.scala-lang.modules#scala-parser-combinators_2.11;1.0.4 from central in [default]
+	org.scala-lang.modules#scala-xml_2.11;1.0.2 from central in [default]
+	org.slf4j#slf4j-api;1.7.16 from central in [default]
+	org.spark-project.spark#unused;1.0.0 from central in [default]
+	org.xerial.snappy#snappy-java;1.1.2.6 from central in [default]
+	---------------------------------------------------------------------
+	|                  |            modules            ||   artifacts   |
+	|       conf       | number| search|dwnlded|evicted|| number|dwnlded|
+	---------------------------------------------------------------------
+	|      default     |   12  |   0   |   0   |   0   ||   12  |   0   |
+	---------------------------------------------------------------------
+:: retrieving :: org.apache.spark#spark-submit-parent
+	confs: [default]
+	0 artifacts copied, 12 already retrieved (0kB/6ms)
+2026-05-11 09:14:10 WARN  NativeCodeLoader:62 - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2026-05-11 09:14:11 INFO  SparkContext:54 - Running Spark version 2.3.0
+2026-05-11 09:14:11 INFO  SparkContext:54 - Submitted application: KafkaStreamingTask5
+2026-05-11 09:14:11 INFO  SecurityManager:54 - Changing view acls to: hobod2026s001
+2026-05-11 09:14:11 INFO  SecurityManager:54 - Changing modify acls to: hobod2026s001
+2026-05-11 09:14:11 INFO  SecurityManager:54 - Changing view acls groups to: 
+2026-05-11 09:14:11 INFO  SecurityManager:54 - Changing modify acls groups to: 
+2026-05-11 09:14:11 INFO  SecurityManager:54 - SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(hobod2026s001); groups with view permissions: Set(); users  with modify permissions: Set(hobod2026s001); groups with modify permissions: Set()
+2026-05-11 09:14:11 INFO  Utils:54 - Successfully started service 'sparkDriver' on port 42368.
+2026-05-11 09:14:11 INFO  SparkEnv:54 - Registering MapOutputTracker
+2026-05-11 09:14:11 INFO  SparkEnv:54 - Registering BlockManagerMaster
+2026-05-11 09:14:11 INFO  BlockManagerMasterEndpoint:54 - Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+2026-05-11 09:14:11 INFO  BlockManagerMasterEndpoint:54 - BlockManagerMasterEndpoint up
+2026-05-11 09:14:11 INFO  DiskBlockManager:54 - Created local directory at /tmp/blockmgr-55cc9b22-d4fe-4896-b417-8eadf372a274
+2026-05-11 09:14:11 INFO  MemoryStore:54 - MemoryStore started with capacity 366.3 MB
+2026-05-11 09:14:11 INFO  SparkEnv:54 - Registering OutputCommitCoordinator
+2026-05-11 09:14:11 INFO  log:192 - Logging initialized @1744ms
+2026-05-11 09:14:11 INFO  Server:346 - jetty-9.3.z-SNAPSHOT
+2026-05-11 09:14:11 INFO  Server:414 - Started @1790ms
+2026-05-11 09:14:11 WARN  Utils:66 - Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+2026-05-11 09:14:11 WARN  Utils:66 - Service 'SparkUI' could not bind on port 4041. Attempting port 4042.
+2026-05-11 09:14:11 INFO  AbstractConnector:278 - Started ServerConnector@13abf801{HTTP/1.1,[http/1.1]}{0.0.0.0:4042}
+2026-05-11 09:14:11 INFO  Utils:54 - Successfully started service 'SparkUI' on port 4042.
+2026-05-11 09:14:11 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@15694809{/jobs,null,AVAILABLE,@Spark}
+2026-05-11 09:14:11 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@7f4187de{/jobs/json,null,AVAILABLE,@Spark}
+2026-05-11 09:14:11 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@4c749aa4{/jobs/job,null,AVAILABLE,@Spark}
+2026-05-11 09:14:11 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@43e4fcb3{/jobs/job/json,null,AVAILABLE,@Spark}
+2026-05-11 09:14:11 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@3068fc66{/stages,null,AVAILABLE,@Spark}
+2026-05-11 09:14:11 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@5821f175{/stages/json,null,AVAILABLE,@Spark}
+2026-05-11 09:14:11 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@162f1791{/stages/stage,null,AVAILABLE,@Spark}
+2026-05-11 09:14:11 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@52cbdaea{/stages/stage/json,null,AVAILABLE,@Spark}
+2026-05-11 09:14:11 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@3c36ccbd{/stages/pool,null,AVAILABLE,@Spark}
+2026-05-11 09:14:11 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@1dd97dd0{/stages/pool/json,null,AVAILABLE,@Spark}
+2026-05-11 09:14:11 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@2910aa32{/storage,null,AVAILABLE,@Spark}
+2026-05-11 09:14:11 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@25802970{/storage/json,null,AVAILABLE,@Spark}
+2026-05-11 09:14:11 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@2fd95a59{/storage/rdd,null,AVAILABLE,@Spark}
+2026-05-11 09:14:11 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@79b8958f{/storage/rdd/json,null,AVAILABLE,@Spark}
+2026-05-11 09:14:11 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@55d5e1b0{/environment,null,AVAILABLE,@Spark}
+2026-05-11 09:14:11 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@713a89d3{/environment/json,null,AVAILABLE,@Spark}
+2026-05-11 09:14:11 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@14d41e3f{/executors,null,AVAILABLE,@Spark}
+2026-05-11 09:14:11 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@297df5c7{/executors/json,null,AVAILABLE,@Spark}
+2026-05-11 09:14:11 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@535f4939{/executors/threadDump,null,AVAILABLE,@Spark}
+2026-05-11 09:14:11 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@768e3690{/executors/threadDump/json,null,AVAILABLE,@Spark}
+2026-05-11 09:14:11 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@429ffb98{/static,null,AVAILABLE,@Spark}
+2026-05-11 09:14:11 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@77de6467{/,null,AVAILABLE,@Spark}
+2026-05-11 09:14:11 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@7d060875{/api,null,AVAILABLE,@Spark}
+2026-05-11 09:14:11 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@6a69db28{/jobs/job/kill,null,AVAILABLE,@Spark}
+2026-05-11 09:14:11 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@1050b8e9{/stages/stage/kill,null,AVAILABLE,@Spark}
+2026-05-11 09:14:11 INFO  SparkUI:54 - Bound SparkUI to 0.0.0.0, and started at http://mipt-client.atp-fivt.org:4042
+2026-05-11 09:14:11 INFO  SparkContext:54 - Added JAR file:///home/hobod2026s/hobod2026s001/.ivy2/jars/org.apache.spark_spark-streaming-kafka-0-8_2.11-2.3.0.jar at spark://mipt-client.atp-fivt.org:42368/jars/org.apache.spark_spark-streaming-kafka-0-8_2.11-2.3.0.jar with timestamp 1778490851468
+2026-05-11 09:14:11 INFO  SparkContext:54 - Added JAR file:///home/hobod2026s/hobod2026s001/.ivy2/jars/org.apache.kafka_kafka_2.11-0.8.2.1.jar at spark://mipt-client.atp-fivt.org:42368/jars/org.apache.kafka_kafka_2.11-0.8.2.1.jar with timestamp 1778490851468
+2026-05-11 09:14:11 INFO  SparkContext:54 - Added JAR file:///home/hobod2026s/hobod2026s001/.ivy2/jars/org.spark-project.spark_unused-1.0.0.jar at spark://mipt-client.atp-fivt.org:42368/jars/org.spark-project.spark_unused-1.0.0.jar with timestamp 1778490851468
+2026-05-11 09:14:11 INFO  SparkContext:54 - Added JAR file:///home/hobod2026s/hobod2026s001/.ivy2/jars/org.scala-lang.modules_scala-xml_2.11-1.0.2.jar at spark://mipt-client.atp-fivt.org:42368/jars/org.scala-lang.modules_scala-xml_2.11-1.0.2.jar with timestamp 1778490851468
+2026-05-11 09:14:11 INFO  SparkContext:54 - Added JAR file:///home/hobod2026s/hobod2026s001/.ivy2/jars/com.yammer.metrics_metrics-core-2.2.0.jar at spark://mipt-client.atp-fivt.org:42368/jars/com.yammer.metrics_metrics-core-2.2.0.jar with timestamp 1778490851468
+2026-05-11 09:14:11 INFO  SparkContext:54 - Added JAR file:///home/hobod2026s/hobod2026s001/.ivy2/jars/org.scala-lang.modules_scala-parser-combinators_2.11-1.0.4.jar at spark://mipt-client.atp-fivt.org:42368/jars/org.scala-lang.modules_scala-parser-combinators_2.11-1.0.4.jar with timestamp 1778490851469
+2026-05-11 09:14:11 INFO  SparkContext:54 - Added JAR file:///home/hobod2026s/hobod2026s001/.ivy2/jars/com.101tec_zkclient-0.3.jar at spark://mipt-client.atp-fivt.org:42368/jars/com.101tec_zkclient-0.3.jar with timestamp 1778490851469
+2026-05-11 09:14:11 INFO  SparkContext:54 - Added JAR file:///home/hobod2026s/hobod2026s001/.ivy2/jars/org.apache.kafka_kafka-clients-0.8.2.1.jar at spark://mipt-client.atp-fivt.org:42368/jars/org.apache.kafka_kafka-clients-0.8.2.1.jar with timestamp 1778490851469
+2026-05-11 09:14:11 INFO  SparkContext:54 - Added JAR file:///home/hobod2026s/hobod2026s001/.ivy2/jars/org.slf4j_slf4j-api-1.7.16.jar at spark://mipt-client.atp-fivt.org:42368/jars/org.slf4j_slf4j-api-1.7.16.jar with timestamp 1778490851469
+2026-05-11 09:14:11 INFO  SparkContext:54 - Added JAR file:///home/hobod2026s/hobod2026s001/.ivy2/jars/log4j_log4j-1.2.17.jar at spark://mipt-client.atp-fivt.org:42368/jars/log4j_log4j-1.2.17.jar with timestamp 1778490851469
+2026-05-11 09:14:11 INFO  SparkContext:54 - Added JAR file:///home/hobod2026s/hobod2026s001/.ivy2/jars/net.jpountz.lz4_lz4-1.2.0.jar at spark://mipt-client.atp-fivt.org:42368/jars/net.jpountz.lz4_lz4-1.2.0.jar with timestamp 1778490851469
+2026-05-11 09:14:11 INFO  SparkContext:54 - Added JAR file:///home/hobod2026s/hobod2026s001/.ivy2/jars/org.xerial.snappy_snappy-java-1.1.2.6.jar at spark://mipt-client.atp-fivt.org:42368/jars/org.xerial.snappy_snappy-java-1.1.2.6.jar with timestamp 1778490851469
+2026-05-11 09:14:11 INFO  SparkContext:54 - Added file file:/home/hobod2026s/hobod2026s001/task5.py at file:/home/hobod2026s/hobod2026s001/task5.py with timestamp 1778490851470
+2026-05-11 09:14:11 INFO  Utils:54 - Copying /home/hobod2026s/hobod2026s001/task5.py to /tmp/spark-9a0ef47b-09af-47df-a815-909a517454ce/userFiles-d2c0bc4f-ea64-4e48-8bff-ac84b63f3430/task5.py
+2026-05-11 09:14:11 INFO  SparkContext:54 - Added file file:///home/hobod2026s/hobod2026s001/.ivy2/jars/org.apache.spark_spark-streaming-kafka-0-8_2.11-2.3.0.jar at file:///home/hobod2026s/hobod2026s001/.ivy2/jars/org.apache.spark_spark-streaming-kafka-0-8_2.11-2.3.0.jar with timestamp 1778490851477
+2026-05-11 09:14:11 INFO  Utils:54 - Copying /home/hobod2026s/hobod2026s001/.ivy2/jars/org.apache.spark_spark-streaming-kafka-0-8_2.11-2.3.0.jar to /tmp/spark-9a0ef47b-09af-47df-a815-909a517454ce/userFiles-d2c0bc4f-ea64-4e48-8bff-ac84b63f3430/org.apache.spark_spark-streaming-kafka-0-8_2.11-2.3.0.jar
+2026-05-11 09:14:11 INFO  SparkContext:54 - Added file file:///home/hobod2026s/hobod2026s001/.ivy2/jars/org.apache.kafka_kafka_2.11-0.8.2.1.jar at file:///home/hobod2026s/hobod2026s001/.ivy2/jars/org.apache.kafka_kafka_2.11-0.8.2.1.jar with timestamp 1778490851479
+2026-05-11 09:14:11 INFO  Utils:54 - Copying /home/hobod2026s/hobod2026s001/.ivy2/jars/org.apache.kafka_kafka_2.11-0.8.2.1.jar to /tmp/spark-9a0ef47b-09af-47df-a815-909a517454ce/userFiles-d2c0bc4f-ea64-4e48-8bff-ac84b63f3430/org.apache.kafka_kafka_2.11-0.8.2.1.jar
+2026-05-11 09:14:11 INFO  SparkContext:54 - Added file file:///home/hobod2026s/hobod2026s001/.ivy2/jars/org.spark-project.spark_unused-1.0.0.jar at file:///home/hobod2026s/hobod2026s001/.ivy2/jars/org.spark-project.spark_unused-1.0.0.jar with timestamp 1778490851482
+2026-05-11 09:14:11 INFO  Utils:54 - Copying /home/hobod2026s/hobod2026s001/.ivy2/jars/org.spark-project.spark_unused-1.0.0.jar to /tmp/spark-9a0ef47b-09af-47df-a815-909a517454ce/userFiles-d2c0bc4f-ea64-4e48-8bff-ac84b63f3430/org.spark-project.spark_unused-1.0.0.jar
+2026-05-11 09:14:11 INFO  SparkContext:54 - Added file file:///home/hobod2026s/hobod2026s001/.ivy2/jars/org.scala-lang.modules_scala-xml_2.11-1.0.2.jar at file:///home/hobod2026s/hobod2026s001/.ivy2/jars/org.scala-lang.modules_scala-xml_2.11-1.0.2.jar with timestamp 1778490851484
+2026-05-11 09:14:11 INFO  Utils:54 - Copying /home/hobod2026s/hobod2026s001/.ivy2/jars/org.scala-lang.modules_scala-xml_2.11-1.0.2.jar to /tmp/spark-9a0ef47b-09af-47df-a815-909a517454ce/userFiles-d2c0bc4f-ea64-4e48-8bff-ac84b63f3430/org.scala-lang.modules_scala-xml_2.11-1.0.2.jar
+2026-05-11 09:14:11 INFO  SparkContext:54 - Added file file:///home/hobod2026s/hobod2026s001/.ivy2/jars/com.yammer.metrics_metrics-core-2.2.0.jar at file:///home/hobod2026s/hobod2026s001/.ivy2/jars/com.yammer.metrics_metrics-core-2.2.0.jar with timestamp 1778490851486
+2026-05-11 09:14:11 INFO  Utils:54 - Copying /home/hobod2026s/hobod2026s001/.ivy2/jars/com.yammer.metrics_metrics-core-2.2.0.jar to /tmp/spark-9a0ef47b-09af-47df-a815-909a517454ce/userFiles-d2c0bc4f-ea64-4e48-8bff-ac84b63f3430/com.yammer.metrics_metrics-core-2.2.0.jar
+2026-05-11 09:14:11 INFO  SparkContext:54 - Added file file:///home/hobod2026s/hobod2026s001/.ivy2/jars/org.scala-lang.modules_scala-parser-combinators_2.11-1.0.4.jar at file:///home/hobod2026s/hobod2026s001/.ivy2/jars/org.scala-lang.modules_scala-parser-combinators_2.11-1.0.4.jar with timestamp 1778490851487
+2026-05-11 09:14:11 INFO  Utils:54 - Copying /home/hobod2026s/hobod2026s001/.ivy2/jars/org.scala-lang.modules_scala-parser-combinators_2.11-1.0.4.jar to /tmp/spark-9a0ef47b-09af-47df-a815-909a517454ce/userFiles-d2c0bc4f-ea64-4e48-8bff-ac84b63f3430/org.scala-lang.modules_scala-parser-combinators_2.11-1.0.4.jar
+2026-05-11 09:14:11 INFO  SparkContext:54 - Added file file:///home/hobod2026s/hobod2026s001/.ivy2/jars/com.101tec_zkclient-0.3.jar at file:///home/hobod2026s/hobod2026s001/.ivy2/jars/com.101tec_zkclient-0.3.jar with timestamp 1778490851489
+2026-05-11 09:14:11 INFO  Utils:54 - Copying /home/hobod2026s/hobod2026s001/.ivy2/jars/com.101tec_zkclient-0.3.jar to /tmp/spark-9a0ef47b-09af-47df-a815-909a517454ce/userFiles-d2c0bc4f-ea64-4e48-8bff-ac84b63f3430/com.101tec_zkclient-0.3.jar
+2026-05-11 09:14:11 INFO  SparkContext:54 - Added file file:///home/hobod2026s/hobod2026s001/.ivy2/jars/org.apache.kafka_kafka-clients-0.8.2.1.jar at file:///home/hobod2026s/hobod2026s001/.ivy2/jars/org.apache.kafka_kafka-clients-0.8.2.1.jar with timestamp 1778490851490
+2026-05-11 09:14:11 INFO  Utils:54 - Copying /home/hobod2026s/hobod2026s001/.ivy2/jars/org.apache.kafka_kafka-clients-0.8.2.1.jar to /tmp/spark-9a0ef47b-09af-47df-a815-909a517454ce/userFiles-d2c0bc4f-ea64-4e48-8bff-ac84b63f3430/org.apache.kafka_kafka-clients-0.8.2.1.jar
+2026-05-11 09:14:11 INFO  SparkContext:54 - Added file file:///home/hobod2026s/hobod2026s001/.ivy2/jars/org.slf4j_slf4j-api-1.7.16.jar at file:///home/hobod2026s/hobod2026s001/.ivy2/jars/org.slf4j_slf4j-api-1.7.16.jar with timestamp 1778490851491
+2026-05-11 09:14:11 INFO  Utils:54 - Copying /home/hobod2026s/hobod2026s001/.ivy2/jars/org.slf4j_slf4j-api-1.7.16.jar to /tmp/spark-9a0ef47b-09af-47df-a815-909a517454ce/userFiles-d2c0bc4f-ea64-4e48-8bff-ac84b63f3430/org.slf4j_slf4j-api-1.7.16.jar
+2026-05-11 09:14:11 INFO  SparkContext:54 - Added file file:///home/hobod2026s/hobod2026s001/.ivy2/jars/log4j_log4j-1.2.17.jar at file:///home/hobod2026s/hobod2026s001/.ivy2/jars/log4j_log4j-1.2.17.jar with timestamp 1778490851493
+2026-05-11 09:14:11 INFO  Utils:54 - Copying /home/hobod2026s/hobod2026s001/.ivy2/jars/log4j_log4j-1.2.17.jar to /tmp/spark-9a0ef47b-09af-47df-a815-909a517454ce/userFiles-d2c0bc4f-ea64-4e48-8bff-ac84b63f3430/log4j_log4j-1.2.17.jar
+2026-05-11 09:14:11 INFO  SparkContext:54 - Added file file:///home/hobod2026s/hobod2026s001/.ivy2/jars/net.jpountz.lz4_lz4-1.2.0.jar at file:///home/hobod2026s/hobod2026s001/.ivy2/jars/net.jpountz.lz4_lz4-1.2.0.jar with timestamp 1778490851494
+2026-05-11 09:14:11 INFO  Utils:54 - Copying /home/hobod2026s/hobod2026s001/.ivy2/jars/net.jpountz.lz4_lz4-1.2.0.jar to /tmp/spark-9a0ef47b-09af-47df-a815-909a517454ce/userFiles-d2c0bc4f-ea64-4e48-8bff-ac84b63f3430/net.jpountz.lz4_lz4-1.2.0.jar
+2026-05-11 09:14:11 INFO  SparkContext:54 - Added file file:///home/hobod2026s/hobod2026s001/.ivy2/jars/org.xerial.snappy_snappy-java-1.1.2.6.jar at file:///home/hobod2026s/hobod2026s001/.ivy2/jars/org.xerial.snappy_snappy-java-1.1.2.6.jar with timestamp 1778490851496
+2026-05-11 09:14:11 INFO  Utils:54 - Copying /home/hobod2026s/hobod2026s001/.ivy2/jars/org.xerial.snappy_snappy-java-1.1.2.6.jar to /tmp/spark-9a0ef47b-09af-47df-a815-909a517454ce/userFiles-d2c0bc4f-ea64-4e48-8bff-ac84b63f3430/org.xerial.snappy_snappy-java-1.1.2.6.jar
+2026-05-11 09:14:11 INFO  Executor:54 - Starting executor ID driver on host localhost
+2026-05-11 09:14:11 INFO  Utils:54 - Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 44756.
+2026-05-11 09:14:11 INFO  NettyBlockTransferService:54 - Server created on mipt-client.atp-fivt.org:44756
+2026-05-11 09:14:11 INFO  BlockManager:54 - Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+2026-05-11 09:14:11 INFO  BlockManagerMaster:54 - Registering BlockManager BlockManagerId(driver, mipt-client.atp-fivt.org, 44756, None)
+2026-05-11 09:14:11 INFO  BlockManagerMasterEndpoint:54 - Registering block manager mipt-client.atp-fivt.org:44756 with 366.3 MB RAM, BlockManagerId(driver, mipt-client.atp-fivt.org, 44756, None)
+2026-05-11 09:14:11 INFO  BlockManagerMaster:54 - Registered BlockManager BlockManagerId(driver, mipt-client.atp-fivt.org, 44756, None)
+2026-05-11 09:14:11 INFO  BlockManager:54 - Initialized BlockManager: BlockManagerId(driver, mipt-client.atp-fivt.org, 44756, None)
+2026-05-11 09:14:11 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@e99d9f3{/metrics/json,null,AVAILABLE,@Spark}
+2026-05-11 09:14:11 INFO  VerifiableProperties:68 - Verifying properties
+2026-05-11 09:14:11 INFO  VerifiableProperties:68 - Property group.id is overridden to 
+2026-05-11 09:14:11 INFO  VerifiableProperties:68 - Property zookeeper.connect is overridden to 
+2026-05-11 09:14:12 INFO  DirectKafkaInputDStream:54 - Slide time = 10000 ms
+2026-05-11 09:14:12 INFO  DirectKafkaInputDStream:54 - Storage level = Serialized 1x Replicated
+2026-05-11 09:14:12 INFO  DirectKafkaInputDStream:54 - Checkpoint interval = null
+2026-05-11 09:14:12 INFO  DirectKafkaInputDStream:54 - Remember interval = 10000 ms
+2026-05-11 09:14:12 INFO  DirectKafkaInputDStream:54 - Initialized and validated org.apache.spark.streaming.kafka.DirectKafkaInputDStream@5031c213
+2026-05-11 09:14:12 INFO  PythonTransformedDStream:54 - Slide time = 10000 ms
+2026-05-11 09:14:12 INFO  PythonTransformedDStream:54 - Storage level = Serialized 1x Replicated
+2026-05-11 09:14:12 INFO  PythonTransformedDStream:54 - Checkpoint interval = null
+2026-05-11 09:14:12 INFO  PythonTransformedDStream:54 - Remember interval = 10000 ms
+2026-05-11 09:14:12 INFO  PythonTransformedDStream:54 - Initialized and validated org.apache.spark.streaming.api.python.PythonTransformedDStream@488370b5
+2026-05-11 09:14:12 INFO  ForEachDStream:54 - Slide time = 10000 ms
+2026-05-11 09:14:12 INFO  ForEachDStream:54 - Storage level = Serialized 1x Replicated
+2026-05-11 09:14:12 INFO  ForEachDStream:54 - Checkpoint interval = null
+2026-05-11 09:14:12 INFO  ForEachDStream:54 - Remember interval = 10000 ms
+2026-05-11 09:14:12 INFO  ForEachDStream:54 - Initialized and validated org.apache.spark.streaming.dstream.ForEachDStream@58d952a0
+2026-05-11 09:14:12 INFO  RecurringTimer:54 - Started timer for JobGenerator at time 1778490860000
+2026-05-11 09:14:12 INFO  JobGenerator:54 - Started JobGenerator at 1778490860000 ms
+2026-05-11 09:14:12 INFO  JobScheduler:54 - Started JobScheduler
+2026-05-11 09:14:12 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@3acb1484{/streaming,null,AVAILABLE,@Spark}
+2026-05-11 09:14:12 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@122b483a{/streaming/json,null,AVAILABLE,@Spark}
+2026-05-11 09:14:12 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@6a6dc543{/streaming/batch,null,AVAILABLE,@Spark}
+2026-05-11 09:14:12 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@430046df{/streaming/batch/json,null,AVAILABLE,@Spark}
+2026-05-11 09:14:12 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@4f5b4cfb{/static/streaming,null,AVAILABLE,@Spark}
+2026-05-11 09:14:12 INFO  StreamingContext:54 - StreamingContext started
+2026-05-11 09:14:20 INFO  VerifiableProperties:68 - Verifying properties
+2026-05-11 09:14:20 INFO  VerifiableProperties:68 - Property group.id is overridden to 
+2026-05-11 09:14:20 INFO  VerifiableProperties:68 - Property zookeeper.connect is overridden to 
+2026-05-11 09:14:20 INFO  JobScheduler:54 - Added jobs for time 1778490860000 ms
+2026-05-11 09:14:20 INFO  JobScheduler:54 - Starting job streaming job 1778490860000 ms.0 from job set of time 1778490860000 ms
+2026-05-11 09:14:20 INFO  SparkContext:54 - Starting job: runJob at PythonRDD.scala:141
+2026-05-11 09:14:20 INFO  DAGScheduler:54 - Got job 0 (runJob at PythonRDD.scala:141) with 1 output partitions
+2026-05-11 09:14:20 INFO  DAGScheduler:54 - Final stage: ResultStage 0 (runJob at PythonRDD.scala:141)
+2026-05-11 09:14:20 INFO  DAGScheduler:54 - Parents of final stage: List()
+2026-05-11 09:14:20 INFO  DAGScheduler:54 - Missing parents: List()
+2026-05-11 09:14:20 INFO  DAGScheduler:54 - Submitting ResultStage 0 (PythonRDD[2] at RDD at PythonRDD.scala:48), which has no missing parents
+2026-05-11 09:14:20 INFO  MemoryStore:54 - Block broadcast_0 stored as values in memory (estimated size 7.0 KB, free 366.3 MB)
+2026-05-11 09:14:20 INFO  MemoryStore:54 - Block broadcast_0_piece0 stored as bytes in memory (estimated size 3.8 KB, free 366.3 MB)
+2026-05-11 09:14:20 INFO  BlockManagerInfo:54 - Added broadcast_0_piece0 in memory on mipt-client.atp-fivt.org:44756 (size: 3.8 KB, free: 366.3 MB)
+2026-05-11 09:14:20 INFO  SparkContext:54 - Created broadcast 0 from broadcast at DAGScheduler.scala:1039
+2026-05-11 09:14:20 INFO  DAGScheduler:54 - Submitting 1 missing tasks from ResultStage 0 (PythonRDD[2] at RDD at PythonRDD.scala:48) (first 15 tasks are for partitions Vector(0))
+2026-05-11 09:14:20 INFO  TaskSchedulerImpl:54 - Adding task set 0.0 with 1 tasks
+2026-05-11 09:14:20 INFO  TaskSetManager:54 - Starting task 0.0 in stage 0.0 (TID 0, localhost, executor driver, partition 0, ANY, 7792 bytes)
+2026-05-11 09:14:20 INFO  Executor:54 - Running task 0.0 in stage 0.0 (TID 0)
+2026-05-11 09:14:20 INFO  Executor:54 - Fetching file:///home/hobod2026s/hobod2026s001/.ivy2/jars/net.jpountz.lz4_lz4-1.2.0.jar with timestamp 1778490851494
+2026-05-11 09:14:20 INFO  Utils:54 - /home/hobod2026s/hobod2026s001/.ivy2/jars/net.jpountz.lz4_lz4-1.2.0.jar has been previously copied to /tmp/spark-9a0ef47b-09af-47df-a815-909a517454ce/userFiles-d2c0bc4f-ea64-4e48-8bff-ac84b63f3430/net.jpountz.lz4_lz4-1.2.0.jar
+2026-05-11 09:14:20 INFO  Executor:54 - Fetching file:///home/hobod2026s/hobod2026s001/.ivy2/jars/org.apache.kafka_kafka-clients-0.8.2.1.jar with timestamp 1778490851490
+2026-05-11 09:14:20 INFO  Utils:54 - /home/hobod2026s/hobod2026s001/.ivy2/jars/org.apache.kafka_kafka-clients-0.8.2.1.jar has been previously copied to /tmp/spark-9a0ef47b-09af-47df-a815-909a517454ce/userFiles-d2c0bc4f-ea64-4e48-8bff-ac84b63f3430/org.apache.kafka_kafka-clients-0.8.2.1.jar
+2026-05-11 09:14:20 INFO  Executor:54 - Fetching file:///home/hobod2026s/hobod2026s001/.ivy2/jars/org.xerial.snappy_snappy-java-1.1.2.6.jar with timestamp 1778490851496
+2026-05-11 09:14:20 INFO  Utils:54 - /home/hobod2026s/hobod2026s001/.ivy2/jars/org.xerial.snappy_snappy-java-1.1.2.6.jar has been previously copied to /tmp/spark-9a0ef47b-09af-47df-a815-909a517454ce/userFiles-d2c0bc4f-ea64-4e48-8bff-ac84b63f3430/org.xerial.snappy_snappy-java-1.1.2.6.jar
+2026-05-11 09:14:20 INFO  Executor:54 - Fetching file:///home/hobod2026s/hobod2026s001/.ivy2/jars/org.spark-project.spark_unused-1.0.0.jar with timestamp 1778490851482
+2026-05-11 09:14:20 INFO  Utils:54 - /home/hobod2026s/hobod2026s001/.ivy2/jars/org.spark-project.spark_unused-1.0.0.jar has been previously copied to /tmp/spark-9a0ef47b-09af-47df-a815-909a517454ce/userFiles-d2c0bc4f-ea64-4e48-8bff-ac84b63f3430/org.spark-project.spark_unused-1.0.0.jar
+2026-05-11 09:14:20 INFO  Executor:54 - Fetching file:///home/hobod2026s/hobod2026s001/.ivy2/jars/org.apache.spark_spark-streaming-kafka-0-8_2.11-2.3.0.jar with timestamp 1778490851477
+2026-05-11 09:14:20 INFO  Utils:54 - /home/hobod2026s/hobod2026s001/.ivy2/jars/org.apache.spark_spark-streaming-kafka-0-8_2.11-2.3.0.jar has been previously copied to /tmp/spark-9a0ef47b-09af-47df-a815-909a517454ce/userFiles-d2c0bc4f-ea64-4e48-8bff-ac84b63f3430/org.apache.spark_spark-streaming-kafka-0-8_2.11-2.3.0.jar
+2026-05-11 09:14:20 INFO  Executor:54 - Fetching file:///home/hobod2026s/hobod2026s001/.ivy2/jars/org.apache.kafka_kafka_2.11-0.8.2.1.jar with timestamp 1778490851479
+2026-05-11 09:14:20 INFO  Utils:54 - /home/hobod2026s/hobod2026s001/.ivy2/jars/org.apache.kafka_kafka_2.11-0.8.2.1.jar has been previously copied to /tmp/spark-9a0ef47b-09af-47df-a815-909a517454ce/userFiles-d2c0bc4f-ea64-4e48-8bff-ac84b63f3430/org.apache.kafka_kafka_2.11-0.8.2.1.jar
+2026-05-11 09:14:20 INFO  Executor:54 - Fetching file:///home/hobod2026s/hobod2026s001/.ivy2/jars/log4j_log4j-1.2.17.jar with timestamp 1778490851493
+2026-05-11 09:14:20 INFO  Utils:54 - /home/hobod2026s/hobod2026s001/.ivy2/jars/log4j_log4j-1.2.17.jar has been previously copied to /tmp/spark-9a0ef47b-09af-47df-a815-909a517454ce/userFiles-d2c0bc4f-ea64-4e48-8bff-ac84b63f3430/log4j_log4j-1.2.17.jar
+2026-05-11 09:14:20 INFO  Executor:54 - Fetching file:///home/hobod2026s/hobod2026s001/.ivy2/jars/org.slf4j_slf4j-api-1.7.16.jar with timestamp 1778490851491
+2026-05-11 09:14:20 INFO  Utils:54 - /home/hobod2026s/hobod2026s001/.ivy2/jars/org.slf4j_slf4j-api-1.7.16.jar has been previously copied to /tmp/spark-9a0ef47b-09af-47df-a815-909a517454ce/userFiles-d2c0bc4f-ea64-4e48-8bff-ac84b63f3430/org.slf4j_slf4j-api-1.7.16.jar
+2026-05-11 09:14:20 INFO  Executor:54 - Fetching file:///home/hobod2026s/hobod2026s001/.ivy2/jars/org.scala-lang.modules_scala-xml_2.11-1.0.2.jar with timestamp 1778490851484
+2026-05-11 09:14:20 INFO  Utils:54 - /home/hobod2026s/hobod2026s001/.ivy2/jars/org.scala-lang.modules_scala-xml_2.11-1.0.2.jar has been previously copied to /tmp/spark-9a0ef47b-09af-47df-a815-909a517454ce/userFiles-d2c0bc4f-ea64-4e48-8bff-ac84b63f3430/org.scala-lang.modules_scala-xml_2.11-1.0.2.jar
+2026-05-11 09:14:20 INFO  Executor:54 - Fetching file:/home/hobod2026s/hobod2026s001/task5.py with timestamp 1778490851470
+2026-05-11 09:14:20 INFO  Utils:54 - /home/hobod2026s/hobod2026s001/task5.py has been previously copied to /tmp/spark-9a0ef47b-09af-47df-a815-909a517454ce/userFiles-d2c0bc4f-ea64-4e48-8bff-ac84b63f3430/task5.py
+2026-05-11 09:14:20 INFO  Executor:54 - Fetching file:///home/hobod2026s/hobod2026s001/.ivy2/jars/com.101tec_zkclient-0.3.jar with timestamp 1778490851489
+2026-05-11 09:14:20 INFO  Utils:54 - /home/hobod2026s/hobod2026s001/.ivy2/jars/com.101tec_zkclient-0.3.jar has been previously copied to /tmp/spark-9a0ef47b-09af-47df-a815-909a517454ce/userFiles-d2c0bc4f-ea64-4e48-8bff-ac84b63f3430/com.101tec_zkclient-0.3.jar
+2026-05-11 09:14:20 INFO  Executor:54 - Fetching file:///home/hobod2026s/hobod2026s001/.ivy2/jars/org.scala-lang.modules_scala-parser-combinators_2.11-1.0.4.jar with timestamp 1778490851487
+2026-05-11 09:14:20 INFO  Utils:54 - /home/hobod2026s/hobod2026s001/.ivy2/jars/org.scala-lang.modules_scala-parser-combinators_2.11-1.0.4.jar has been previously copied to /tmp/spark-9a0ef47b-09af-47df-a815-909a517454ce/userFiles-d2c0bc4f-ea64-4e48-8bff-ac84b63f3430/org.scala-lang.modules_scala-parser-combinators_2.11-1.0.4.jar
+2026-05-11 09:14:20 INFO  Executor:54 - Fetching file:///home/hobod2026s/hobod2026s001/.ivy2/jars/com.yammer.metrics_metrics-core-2.2.0.jar with timestamp 1778490851486
+2026-05-11 09:14:20 INFO  Utils:54 - /home/hobod2026s/hobod2026s001/.ivy2/jars/com.yammer.metrics_metrics-core-2.2.0.jar has been previously copied to /tmp/spark-9a0ef47b-09af-47df-a815-909a517454ce/userFiles-d2c0bc4f-ea64-4e48-8bff-ac84b63f3430/com.yammer.metrics_metrics-core-2.2.0.jar
+2026-05-11 09:14:20 INFO  Executor:54 - Fetching spark://mipt-client.atp-fivt.org:42368/jars/org.xerial.snappy_snappy-java-1.1.2.6.jar with timestamp 1778490851469
+2026-05-11 09:14:20 INFO  TransportClientFactory:267 - Successfully created connection to mipt-client.atp-fivt.org/93.175.29.107:42368 after 19 ms (0 ms spent in bootstraps)
+2026-05-11 09:14:20 INFO  Utils:54 - Fetching spark://mipt-client.atp-fivt.org:42368/jars/org.xerial.snappy_snappy-java-1.1.2.6.jar to /tmp/spark-9a0ef47b-09af-47df-a815-909a517454ce/userFiles-d2c0bc4f-ea64-4e48-8bff-ac84b63f3430/fetchFileTemp3441288846623317976.tmp
+2026-05-11 09:14:20 INFO  Utils:54 - /tmp/spark-9a0ef47b-09af-47df-a815-909a517454ce/userFiles-d2c0bc4f-ea64-4e48-8bff-ac84b63f3430/fetchFileTemp3441288846623317976.tmp has been previously copied to /tmp/spark-9a0ef47b-09af-47df-a815-909a517454ce/userFiles-d2c0bc4f-ea64-4e48-8bff-ac84b63f3430/org.xerial.snappy_snappy-java-1.1.2.6.jar
+2026-05-11 09:14:20 INFO  Executor:54 - Adding file:/tmp/spark-9a0ef47b-09af-47df-a815-909a517454ce/userFiles-d2c0bc4f-ea64-4e48-8bff-ac84b63f3430/org.xerial.snappy_snappy-java-1.1.2.6.jar to class loader
+2026-05-11 09:14:20 INFO  Executor:54 - Fetching spark://mipt-client.atp-fivt.org:42368/jars/org.scala-lang.modules_scala-xml_2.11-1.0.2.jar with timestamp 1778490851468
+2026-05-11 09:14:20 INFO  Utils:54 - Fetching spark://mipt-client.atp-fivt.org:42368/jars/org.scala-lang.modules_scala-xml_2.11-1.0.2.jar to /tmp/spark-9a0ef47b-09af-47df-a815-909a517454ce/userFiles-d2c0bc4f-ea64-4e48-8bff-ac84b63f3430/fetchFileTemp822693212754350877.tmp
+2026-05-11 09:14:20 INFO  Utils:54 - /tmp/spark-9a0ef47b-09af-47df-a815-909a517454ce/userFiles-d2c0bc4f-ea64-4e48-8bff-ac84b63f3430/fetchFileTemp822693212754350877.tmp has been previously copied to /tmp/spark-9a0ef47b-09af-47df-a815-909a517454ce/userFiles-d2c0bc4f-ea64-4e48-8bff-ac84b63f3430/org.scala-lang.modules_scala-xml_2.11-1.0.2.jar
+2026-05-11 09:14:20 INFO  Executor:54 - Adding file:/tmp/spark-9a0ef47b-09af-47df-a815-909a517454ce/userFiles-d2c0bc4f-ea64-4e48-8bff-ac84b63f3430/org.scala-lang.modules_scala-xml_2.11-1.0.2.jar to class loader
+2026-05-11 09:14:20 INFO  Executor:54 - Fetching spark://mipt-client.atp-fivt.org:42368/jars/org.slf4j_slf4j-api-1.7.16.jar with timestamp 1778490851469
+2026-05-11 09:14:20 INFO  Utils:54 - Fetching spark://mipt-client.atp-fivt.org:42368/jars/org.slf4j_slf4j-api-1.7.16.jar to /tmp/spark-9a0ef47b-09af-47df-a815-909a517454ce/userFiles-d2c0bc4f-ea64-4e48-8bff-ac84b63f3430/fetchFileTemp1748880491464899415.tmp
+2026-05-11 09:14:20 INFO  Utils:54 - /tmp/spark-9a0ef47b-09af-47df-a815-909a517454ce/userFiles-d2c0bc4f-ea64-4e48-8bff-ac84b63f3430/fetchFileTemp1748880491464899415.tmp has been previously copied to /tmp/spark-9a0ef47b-09af-47df-a815-909a517454ce/userFiles-d2c0bc4f-ea64-4e48-8bff-ac84b63f3430/org.slf4j_slf4j-api-1.7.16.jar
+2026-05-11 09:14:20 INFO  Executor:54 - Adding file:/tmp/spark-9a0ef47b-09af-47df-a815-909a517454ce/userFiles-d2c0bc4f-ea64-4e48-8bff-ac84b63f3430/org.slf4j_slf4j-api-1.7.16.jar to class loader
+2026-05-11 09:14:20 INFO  Executor:54 - Fetching spark://mipt-client.atp-fivt.org:42368/jars/org.apache.kafka_kafka-clients-0.8.2.1.jar with timestamp 1778490851469
+2026-05-11 09:14:20 INFO  Utils:54 - Fetching spark://mipt-client.atp-fivt.org:42368/jars/org.apache.kafka_kafka-clients-0.8.2.1.jar to /tmp/spark-9a0ef47b-09af-47df-a815-909a517454ce/userFiles-d2c0bc4f-ea64-4e48-8bff-ac84b63f3430/fetchFileTemp5083545520936653238.tmp
+2026-05-11 09:14:20 INFO  Utils:54 - /tmp/spark-9a0ef47b-09af-47df-a815-909a517454ce/userFiles-d2c0bc4f-ea64-4e48-8bff-ac84b63f3430/fetchFileTemp5083545520936653238.tmp has been previously copied to /tmp/spark-9a0ef47b-09af-47df-a815-909a517454ce/userFiles-d2c0bc4f-ea64-4e48-8bff-ac84b63f3430/org.apache.kafka_kafka-clients-0.8.2.1.jar
+2026-05-11 09:14:20 INFO  Executor:54 - Adding file:/tmp/spark-9a0ef47b-09af-47df-a815-909a517454ce/userFiles-d2c0bc4f-ea64-4e48-8bff-ac84b63f3430/org.apache.kafka_kafka-clients-0.8.2.1.jar to class loader
+2026-05-11 09:14:20 INFO  Executor:54 - Fetching spark://mipt-client.atp-fivt.org:42368/jars/com.101tec_zkclient-0.3.jar with timestamp 1778490851469
+2026-05-11 09:14:20 INFO  Utils:54 - Fetching spark://mipt-client.atp-fivt.org:42368/jars/com.101tec_zkclient-0.3.jar to /tmp/spark-9a0ef47b-09af-47df-a815-909a517454ce/userFiles-d2c0bc4f-ea64-4e48-8bff-ac84b63f3430/fetchFileTemp2982978452544320645.tmp
+2026-05-11 09:14:20 INFO  Utils:54 - /tmp/spark-9a0ef47b-09af-47df-a815-909a517454ce/userFiles-d2c0bc4f-ea64-4e48-8bff-ac84b63f3430/fetchFileTemp2982978452544320645.tmp has been previously copied to /tmp/spark-9a0ef47b-09af-47df-a815-909a517454ce/userFiles-d2c0bc4f-ea64-4e48-8bff-ac84b63f3430/com.101tec_zkclient-0.3.jar
+2026-05-11 09:14:20 INFO  Executor:54 - Adding file:/tmp/spark-9a0ef47b-09af-47df-a815-909a517454ce/userFiles-d2c0bc4f-ea64-4e48-8bff-ac84b63f3430/com.101tec_zkclient-0.3.jar to class loader
+2026-05-11 09:14:20 INFO  Executor:54 - Fetching spark://mipt-client.atp-fivt.org:42368/jars/net.jpountz.lz4_lz4-1.2.0.jar with timestamp 1778490851469
+2026-05-11 09:14:20 INFO  Utils:54 - Fetching spark://mipt-client.atp-fivt.org:42368/jars/net.jpountz.lz4_lz4-1.2.0.jar to /tmp/spark-9a0ef47b-09af-47df-a815-909a517454ce/userFiles-d2c0bc4f-ea64-4e48-8bff-ac84b63f3430/fetchFileTemp2476126208893585199.tmp
+2026-05-11 09:14:20 INFO  Utils:54 - /tmp/spark-9a0ef47b-09af-47df-a815-909a517454ce/userFiles-d2c0bc4f-ea64-4e48-8bff-ac84b63f3430/fetchFileTemp2476126208893585199.tmp has been previously copied to /tmp/spark-9a0ef47b-09af-47df-a815-909a517454ce/userFiles-d2c0bc4f-ea64-4e48-8bff-ac84b63f3430/net.jpountz.lz4_lz4-1.2.0.jar
+2026-05-11 09:14:20 INFO  Executor:54 - Adding file:/tmp/spark-9a0ef47b-09af-47df-a815-909a517454ce/userFiles-d2c0bc4f-ea64-4e48-8bff-ac84b63f3430/net.jpountz.lz4_lz4-1.2.0.jar to class loader
+2026-05-11 09:14:20 INFO  Executor:54 - Fetching spark://mipt-client.atp-fivt.org:42368/jars/org.apache.spark_spark-streaming-kafka-0-8_2.11-2.3.0.jar with timestamp 1778490851468
+2026-05-11 09:14:20 INFO  Utils:54 - Fetching spark://mipt-client.atp-fivt.org:42368/jars/org.apache.spark_spark-streaming-kafka-0-8_2.11-2.3.0.jar to /tmp/spark-9a0ef47b-09af-47df-a815-909a517454ce/userFiles-d2c0bc4f-ea64-4e48-8bff-ac84b63f3430/fetchFileTemp7872023031805688808.tmp
+2026-05-11 09:14:20 INFO  Utils:54 - /tmp/spark-9a0ef47b-09af-47df-a815-909a517454ce/userFiles-d2c0bc4f-ea64-4e48-8bff-ac84b63f3430/fetchFileTemp7872023031805688808.tmp has been previously copied to /tmp/spark-9a0ef47b-09af-47df-a815-909a517454ce/userFiles-d2c0bc4f-ea64-4e48-8bff-ac84b63f3430/org.apache.spark_spark-streaming-kafka-0-8_2.11-2.3.0.jar
+2026-05-11 09:14:20 INFO  Executor:54 - Adding file:/tmp/spark-9a0ef47b-09af-47df-a815-909a517454ce/userFiles-d2c0bc4f-ea64-4e48-8bff-ac84b63f3430/org.apache.spark_spark-streaming-kafka-0-8_2.11-2.3.0.jar to class loader
+2026-05-11 09:14:20 INFO  Executor:54 - Fetching spark://mipt-client.atp-fivt.org:42368/jars/org.spark-project.spark_unused-1.0.0.jar with timestamp 1778490851468
+2026-05-11 09:14:20 INFO  Utils:54 - Fetching spark://mipt-client.atp-fivt.org:42368/jars/org.spark-project.spark_unused-1.0.0.jar to /tmp/spark-9a0ef47b-09af-47df-a815-909a517454ce/userFiles-d2c0bc4f-ea64-4e48-8bff-ac84b63f3430/fetchFileTemp8959682640285123502.tmp
+2026-05-11 09:14:20 INFO  Utils:54 - /tmp/spark-9a0ef47b-09af-47df-a815-909a517454ce/userFiles-d2c0bc4f-ea64-4e48-8bff-ac84b63f3430/fetchFileTemp8959682640285123502.tmp has been previously copied to /tmp/spark-9a0ef47b-09af-47df-a815-909a517454ce/userFiles-d2c0bc4f-ea64-4e48-8bff-ac84b63f3430/org.spark-project.spark_unused-1.0.0.jar
+2026-05-11 09:14:20 INFO  Executor:54 - Adding file:/tmp/spark-9a0ef47b-09af-47df-a815-909a517454ce/userFiles-d2c0bc4f-ea64-4e48-8bff-ac84b63f3430/org.spark-project.spark_unused-1.0.0.jar to class loader
+2026-05-11 09:14:20 INFO  Executor:54 - Fetching spark://mipt-client.atp-fivt.org:42368/jars/org.scala-lang.modules_scala-parser-combinators_2.11-1.0.4.jar with timestamp 1778490851469
+2026-05-11 09:14:20 INFO  Utils:54 - Fetching spark://mipt-client.atp-fivt.org:42368/jars/org.scala-lang.modules_scala-parser-combinators_2.11-1.0.4.jar to /tmp/spark-9a0ef47b-09af-47df-a815-909a517454ce/userFiles-d2c0bc4f-ea64-4e48-8bff-ac84b63f3430/fetchFileTemp4402579200260847299.tmp
+2026-05-11 09:14:20 INFO  Utils:54 - /tmp/spark-9a0ef47b-09af-47df-a815-909a517454ce/userFiles-d2c0bc4f-ea64-4e48-8bff-ac84b63f3430/fetchFileTemp4402579200260847299.tmp has been previously copied to /tmp/spark-9a0ef47b-09af-47df-a815-909a517454ce/userFiles-d2c0bc4f-ea64-4e48-8bff-ac84b63f3430/org.scala-lang.modules_scala-parser-combinators_2.11-1.0.4.jar
+2026-05-11 09:14:20 INFO  Executor:54 - Adding file:/tmp/spark-9a0ef47b-09af-47df-a815-909a517454ce/userFiles-d2c0bc4f-ea64-4e48-8bff-ac84b63f3430/org.scala-lang.modules_scala-parser-combinators_2.11-1.0.4.jar to class loader
+2026-05-11 09:14:20 INFO  Executor:54 - Fetching spark://mipt-client.atp-fivt.org:42368/jars/log4j_log4j-1.2.17.jar with timestamp 1778490851469
+2026-05-11 09:14:20 INFO  Utils:54 - Fetching spark://mipt-client.atp-fivt.org:42368/jars/log4j_log4j-1.2.17.jar to /tmp/spark-9a0ef47b-09af-47df-a815-909a517454ce/userFiles-d2c0bc4f-ea64-4e48-8bff-ac84b63f3430/fetchFileTemp2073475009368910511.tmp
+2026-05-11 09:14:20 INFO  Utils:54 - /tmp/spark-9a0ef47b-09af-47df-a815-909a517454ce/userFiles-d2c0bc4f-ea64-4e48-8bff-ac84b63f3430/fetchFileTemp2073475009368910511.tmp has been previously copied to /tmp/spark-9a0ef47b-09af-47df-a815-909a517454ce/userFiles-d2c0bc4f-ea64-4e48-8bff-ac84b63f3430/log4j_log4j-1.2.17.jar
+2026-05-11 09:14:20 INFO  Executor:54 - Adding file:/tmp/spark-9a0ef47b-09af-47df-a815-909a517454ce/userFiles-d2c0bc4f-ea64-4e48-8bff-ac84b63f3430/log4j_log4j-1.2.17.jar to class loader
+2026-05-11 09:14:20 INFO  Executor:54 - Fetching spark://mipt-client.atp-fivt.org:42368/jars/com.yammer.metrics_metrics-core-2.2.0.jar with timestamp 1778490851468
+2026-05-11 09:14:20 INFO  Utils:54 - Fetching spark://mipt-client.atp-fivt.org:42368/jars/com.yammer.metrics_metrics-core-2.2.0.jar to /tmp/spark-9a0ef47b-09af-47df-a815-909a517454ce/userFiles-d2c0bc4f-ea64-4e48-8bff-ac84b63f3430/fetchFileTemp4790497339308609492.tmp
+2026-05-11 09:14:20 INFO  Utils:54 - /tmp/spark-9a0ef47b-09af-47df-a815-909a517454ce/userFiles-d2c0bc4f-ea64-4e48-8bff-ac84b63f3430/fetchFileTemp4790497339308609492.tmp has been previously copied to /tmp/spark-9a0ef47b-09af-47df-a815-909a517454ce/userFiles-d2c0bc4f-ea64-4e48-8bff-ac84b63f3430/com.yammer.metrics_metrics-core-2.2.0.jar
+2026-05-11 09:14:20 INFO  Executor:54 - Adding file:/tmp/spark-9a0ef47b-09af-47df-a815-909a517454ce/userFiles-d2c0bc4f-ea64-4e48-8bff-ac84b63f3430/com.yammer.metrics_metrics-core-2.2.0.jar to class loader
+2026-05-11 09:14:20 INFO  Executor:54 - Fetching spark://mipt-client.atp-fivt.org:42368/jars/org.apache.kafka_kafka_2.11-0.8.2.1.jar with timestamp 1778490851468
+2026-05-11 09:14:20 INFO  Utils:54 - Fetching spark://mipt-client.atp-fivt.org:42368/jars/org.apache.kafka_kafka_2.11-0.8.2.1.jar to /tmp/spark-9a0ef47b-09af-47df-a815-909a517454ce/userFiles-d2c0bc4f-ea64-4e48-8bff-ac84b63f3430/fetchFileTemp7600789580286863646.tmp
+2026-05-11 09:14:20 INFO  Utils:54 - /tmp/spark-9a0ef47b-09af-47df-a815-909a517454ce/userFiles-d2c0bc4f-ea64-4e48-8bff-ac84b63f3430/fetchFileTemp7600789580286863646.tmp has been previously copied to /tmp/spark-9a0ef47b-09af-47df-a815-909a517454ce/userFiles-d2c0bc4f-ea64-4e48-8bff-ac84b63f3430/org.apache.kafka_kafka_2.11-0.8.2.1.jar
+2026-05-11 09:14:20 INFO  Executor:54 - Adding file:/tmp/spark-9a0ef47b-09af-47df-a815-909a517454ce/userFiles-d2c0bc4f-ea64-4e48-8bff-ac84b63f3430/org.apache.kafka_kafka_2.11-0.8.2.1.jar to class loader
+2026-05-11 09:14:20 INFO  KafkaRDD:54 - Beginning offset 200000 is the same as ending offset skipping bessmertnyjde-topic 0
+2026-05-11 09:14:20 INFO  PythonRunner:54 - Times: total = 163, boot = 151, init = 12, finish = 0
+2026-05-11 09:14:20 INFO  PythonRunner:54 - Times: total = 8, boot = 2, init = 6, finish = 0
+2026-05-11 09:14:20 INFO  Executor:54 - Finished task 0.0 in stage 0.0 (TID 0). 1235 bytes result sent to driver
+2026-05-11 09:14:20 INFO  TaskSetManager:54 - Finished task 0.0 in stage 0.0 (TID 0) in 388 ms on localhost (executor driver) (1/1)
+2026-05-11 09:14:20 INFO  TaskSchedulerImpl:54 - Removed TaskSet 0.0, whose tasks have all completed, from pool 
+2026-05-11 09:14:20 INFO  DAGScheduler:54 - ResultStage 0 (runJob at PythonRDD.scala:141) finished in 0,473 s
+2026-05-11 09:14:20 INFO  DAGScheduler:54 - Job 0 finished: runJob at PythonRDD.scala:141, took 0,500516 s
+2026-05-11 09:14:20 INFO  JobScheduler:54 - Finished job streaming job 1778490860000 ms.0 from job set of time 1778490860000 ms
+2026-05-11 09:14:20 INFO  JobScheduler:54 - Total delay: 0,596 s for time 1778490860000 ms (execution: 0,522 s)
+2026-05-11 09:14:20 INFO  ReceivedBlockTracker:54 - Deleting batches: 
+2026-05-11 09:14:20 INFO  InputInfoTracker:54 - remove old batch metadata: 
+2026-05-11 09:14:30 INFO  JobScheduler:54 - Added jobs for time 1778490870000 ms
+2026-05-11 09:14:30 INFO  JobScheduler:54 - Starting job streaming job 1778490870000 ms.0 from job set of time 1778490870000 ms
+2026-05-11 09:14:30 INFO  SparkContext:54 - Starting job: runJob at PythonRDD.scala:141
+2026-05-11 09:14:30 INFO  DAGScheduler:54 - Got job 1 (runJob at PythonRDD.scala:141) with 1 output partitions
+2026-05-11 09:14:30 INFO  DAGScheduler:54 - Final stage: ResultStage 1 (runJob at PythonRDD.scala:141)
+2026-05-11 09:14:30 INFO  DAGScheduler:54 - Parents of final stage: List()
+2026-05-11 09:14:30 INFO  DAGScheduler:54 - Missing parents: List()
+2026-05-11 09:14:30 INFO  DAGScheduler:54 - Submitting ResultStage 1 (PythonRDD[5] at RDD at PythonRDD.scala:48), which has no missing parents
+2026-05-11 09:14:30 INFO  MemoryStore:54 - Block broadcast_1 stored as values in memory (estimated size 7.0 KB, free 366.3 MB)
+2026-05-11 09:14:30 INFO  MemoryStore:54 - Block broadcast_1_piece0 stored as bytes in memory (estimated size 3.8 KB, free 366.3 MB)
+2026-05-11 09:14:30 INFO  BlockManagerInfo:54 - Added broadcast_1_piece0 in memory on mipt-client.atp-fivt.org:44756 (size: 3.8 KB, free: 366.3 MB)
+2026-05-11 09:14:30 INFO  SparkContext:54 - Created broadcast 1 from broadcast at DAGScheduler.scala:1039
+2026-05-11 09:14:30 INFO  DAGScheduler:54 - Submitting 1 missing tasks from ResultStage 1 (PythonRDD[5] at RDD at PythonRDD.scala:48) (first 15 tasks are for partitions Vector(0))
+2026-05-11 09:14:30 INFO  TaskSchedulerImpl:54 - Adding task set 1.0 with 1 tasks
+2026-05-11 09:14:30 INFO  TaskSetManager:54 - Starting task 0.0 in stage 1.0 (TID 1, localhost, executor driver, partition 0, ANY, 7792 bytes)
+2026-05-11 09:14:30 INFO  Executor:54 - Running task 0.0 in stage 1.0 (TID 1)
+2026-05-11 09:14:30 INFO  KafkaRDD:54 - Beginning offset 200000 is the same as ending offset skipping bessmertnyjde-topic 0
+2026-05-11 09:14:30 INFO  PythonRunner:54 - Times: total = 38, boot = -9461, init = 9499, finish = 0
+2026-05-11 09:14:30 INFO  PythonRunner:54 - Times: total = 45, boot = -9460, init = 9505, finish = 0
+2026-05-11 09:14:30 INFO  Executor:54 - Finished task 0.0 in stage 1.0 (TID 1). 1235 bytes result sent to driver
+2026-05-11 09:14:30 INFO  TaskSetManager:54 - Finished task 0.0 in stage 1.0 (TID 1) in 54 ms on localhost (executor driver) (1/1)
+2026-05-11 09:14:30 INFO  TaskSchedulerImpl:54 - Removed TaskSet 1.0, whose tasks have all completed, from pool 
+2026-05-11 09:14:30 INFO  DAGScheduler:54 - ResultStage 1 (runJob at PythonRDD.scala:141) finished in 0,061 s
+2026-05-11 09:14:30 INFO  DAGScheduler:54 - Job 1 finished: runJob at PythonRDD.scala:141, took 0,063504 s
+2026-05-11 09:14:30 INFO  JobScheduler:54 - Finished job streaming job 1778490870000 ms.0 from job set of time 1778490870000 ms
+2026-05-11 09:14:30 INFO  JobScheduler:54 - Total delay: 0,085 s for time 1778490870000 ms (execution: 0,073 s)
+2026-05-11 09:14:30 INFO  PythonRDD:54 - Removing RDD 1 from persistence list
+2026-05-11 09:14:30 INFO  BlockManager:54 - Removing RDD 1
+2026-05-11 09:14:30 INFO  KafkaRDD:54 - Removing RDD 0 from persistence list
+2026-05-11 09:14:30 INFO  BlockManager:54 - Removing RDD 0
+2026-05-11 09:14:30 INFO  ReceivedBlockTracker:54 - Deleting batches: 
+2026-05-11 09:14:30 INFO  InputInfoTracker:54 - remove old batch metadata: 
+2026-05-11 09:14:40 INFO  JobScheduler:54 - Added jobs for time 1778490880000 ms
+2026-05-11 09:14:40 INFO  JobScheduler:54 - Starting job streaming job 1778490880000 ms.0 from job set of time 1778490880000 ms
+2026-05-11 09:14:40 INFO  SparkContext:54 - Starting job: runJob at PythonRDD.scala:141
+2026-05-11 09:14:40 INFO  DAGScheduler:54 - Got job 2 (runJob at PythonRDD.scala:141) with 1 output partitions
+2026-05-11 09:14:40 INFO  DAGScheduler:54 - Final stage: ResultStage 2 (runJob at PythonRDD.scala:141)
+2026-05-11 09:14:40 INFO  DAGScheduler:54 - Parents of final stage: List()
+2026-05-11 09:14:40 INFO  DAGScheduler:54 - Missing parents: List()
+2026-05-11 09:14:40 INFO  DAGScheduler:54 - Submitting ResultStage 2 (PythonRDD[8] at RDD at PythonRDD.scala:48), which has no missing parents
+2026-05-11 09:14:40 INFO  MemoryStore:54 - Block broadcast_2 stored as values in memory (estimated size 7.0 KB, free 366.3 MB)
+2026-05-11 09:14:40 INFO  MemoryStore:54 - Block broadcast_2_piece0 stored as bytes in memory (estimated size 3.8 KB, free 366.3 MB)
+2026-05-11 09:14:40 INFO  BlockManagerInfo:54 - Added broadcast_2_piece0 in memory on mipt-client.atp-fivt.org:44756 (size: 3.8 KB, free: 366.3 MB)
+2026-05-11 09:14:40 INFO  SparkContext:54 - Created broadcast 2 from broadcast at DAGScheduler.scala:1039
+2026-05-11 09:14:40 INFO  DAGScheduler:54 - Submitting 1 missing tasks from ResultStage 2 (PythonRDD[8] at RDD at PythonRDD.scala:48) (first 15 tasks are for partitions Vector(0))
+2026-05-11 09:14:40 INFO  TaskSchedulerImpl:54 - Adding task set 2.0 with 1 tasks
+2026-05-11 09:14:40 INFO  TaskSetManager:54 - Starting task 0.0 in stage 2.0 (TID 2, localhost, executor driver, partition 0, ANY, 7792 bytes)
+2026-05-11 09:14:40 INFO  Executor:54 - Running task 0.0 in stage 2.0 (TID 2)
+2026-05-11 09:14:40 INFO  KafkaRDD:54 - Beginning offset 200000 is the same as ending offset skipping bessmertnyjde-topic 0
+2026-05-11 09:14:40 INFO  ContextCleaner:54 - Cleaned accumulator 19
+2026-05-11 09:14:40 INFO  ContextCleaner:54 - Cleaned accumulator 25
+2026-05-11 09:14:40 INFO  ContextCleaner:54 - Cleaned accumulator 37
+2026-05-11 09:14:40 INFO  ContextCleaner:54 - Cleaned accumulator 45
+2026-05-11 09:14:40 INFO  ContextCleaner:54 - Cleaned accumulator 23
+2026-05-11 09:14:40 INFO  ContextCleaner:54 - Cleaned accumulator 47
+2026-05-11 09:14:40 INFO  ContextCleaner:54 - Cleaned accumulator 11
+2026-05-11 09:14:40 INFO  ContextCleaner:54 - Cleaned accumulator 8
+2026-05-11 09:14:40 INFO  ContextCleaner:54 - Cleaned accumulator 12
+2026-05-11 09:14:40 INFO  ContextCleaner:54 - Cleaned accumulator 15
+2026-05-11 09:14:40 INFO  ContextCleaner:54 - Cleaned accumulator 14
+2026-05-11 09:14:40 INFO  ContextCleaner:54 - Cleaned accumulator 32
+2026-05-11 09:14:40 INFO  BlockManagerInfo:54 - Removed broadcast_1_piece0 on mipt-client.atp-fivt.org:44756 in memory (size: 3.8 KB, free: 366.3 MB)
+2026-05-11 09:14:40 INFO  ContextCleaner:54 - Cleaned accumulator 36
+2026-05-11 09:14:40 INFO  ContextCleaner:54 - Cleaned accumulator 9
+2026-05-11 09:14:40 INFO  ContextCleaner:54 - Cleaned accumulator 5
+2026-05-11 09:14:40 INFO  BlockManagerInfo:54 - Removed broadcast_0_piece0 on mipt-client.atp-fivt.org:44756 in memory (size: 3.8 KB, free: 366.3 MB)
+2026-05-11 09:14:40 INFO  ContextCleaner:54 - Cleaned accumulator 27
+2026-05-11 09:14:40 INFO  ContextCleaner:54 - Cleaned accumulator 1
+2026-05-11 09:14:40 INFO  ContextCleaner:54 - Cleaned accumulator 46
+2026-05-11 09:14:40 INFO  ContextCleaner:54 - Cleaned accumulator 3
+2026-05-11 09:14:40 INFO  ContextCleaner:54 - Cleaned accumulator 40
+2026-05-11 09:14:40 INFO  ContextCleaner:54 - Cleaned accumulator 13
+2026-05-11 09:14:40 INFO  ContextCleaner:54 - Cleaned accumulator 24
+2026-05-11 09:14:40 INFO  ContextCleaner:54 - Cleaned accumulator 31
+2026-05-11 09:14:40 INFO  ContextCleaner:54 - Cleaned accumulator 41
+2026-05-11 09:14:40 INFO  ContextCleaner:54 - Cleaned accumulator 18
+2026-05-11 09:14:40 INFO  ContextCleaner:54 - Cleaned accumulator 42
+2026-05-11 09:14:40 INFO  ContextCleaner:54 - Cleaned accumulator 4
+2026-05-11 09:14:40 INFO  ContextCleaner:54 - Cleaned accumulator 7
+2026-05-11 09:14:40 INFO  ContextCleaner:54 - Cleaned accumulator 30
+2026-05-11 09:14:40 INFO  ContextCleaner:54 - Cleaned accumulator 34
+2026-05-11 09:14:40 INFO  ContextCleaner:54 - Cleaned accumulator 17
+2026-05-11 09:14:40 INFO  ContextCleaner:54 - Cleaned accumulator 50
+2026-05-11 09:14:40 INFO  ContextCleaner:54 - Cleaned accumulator 35
+2026-05-11 09:14:40 INFO  ContextCleaner:54 - Cleaned accumulator 33
+2026-05-11 09:14:40 INFO  ContextCleaner:54 - Cleaned accumulator 49
+2026-05-11 09:14:40 INFO  ContextCleaner:54 - Cleaned accumulator 20
+2026-05-11 09:14:40 INFO  ContextCleaner:54 - Cleaned accumulator 39
+2026-05-11 09:14:40 INFO  ContextCleaner:54 - Cleaned accumulator 29
+2026-05-11 09:14:40 INFO  ContextCleaner:54 - Cleaned accumulator 44
+2026-05-11 09:14:40 INFO  ContextCleaner:54 - Cleaned accumulator 43
+2026-05-11 09:14:40 INFO  ContextCleaner:54 - Cleaned accumulator 26
+2026-05-11 09:14:40 INFO  ContextCleaner:54 - Cleaned accumulator 28
+2026-05-11 09:14:40 INFO  ContextCleaner:54 - Cleaned accumulator 10
+2026-05-11 09:14:40 INFO  ContextCleaner:54 - Cleaned accumulator 2
+2026-05-11 09:14:40 INFO  ContextCleaner:54 - Cleaned accumulator 48
+2026-05-11 09:14:40 INFO  ContextCleaner:54 - Cleaned accumulator 22
+2026-05-11 09:14:40 INFO  ContextCleaner:54 - Cleaned accumulator 38
+2026-05-11 09:14:40 INFO  ContextCleaner:54 - Cleaned accumulator 6
+2026-05-11 09:14:40 INFO  ContextCleaner:54 - Cleaned accumulator 21
+2026-05-11 09:14:40 INFO  ContextCleaner:54 - Cleaned accumulator 16
+2026-05-11 09:14:40 INFO  PythonRunner:54 - Times: total = 50, boot = -9961, init = 10010, finish = 1
+2026-05-11 09:14:40 INFO  PythonRunner:54 - Times: total = 41, boot = -9966, init = 10006, finish = 1
+2026-05-11 09:14:40 INFO  Executor:54 - Finished task 0.0 in stage 2.0 (TID 2). 1278 bytes result sent to driver
+2026-05-11 09:14:40 INFO  TaskSetManager:54 - Finished task 0.0 in stage 2.0 (TID 2) in 59 ms on localhost (executor driver) (1/1)
+2026-05-11 09:14:40 INFO  TaskSchedulerImpl:54 - Removed TaskSet 2.0, whose tasks have all completed, from pool 
+2026-05-11 09:14:40 INFO  DAGScheduler:54 - ResultStage 2 (runJob at PythonRDD.scala:141) finished in 0,070 s
+2026-05-11 09:14:40 INFO  DAGScheduler:54 - Job 2 finished: runJob at PythonRDD.scala:141, took 0,071533 s
+2026-05-11 09:14:40 INFO  JobScheduler:54 - Finished job streaming job 1778490880000 ms.0 from job set of time 1778490880000 ms
+2026-05-11 09:14:40 INFO  JobScheduler:54 - Total delay: 0,095 s for time 1778490880000 ms (execution: 0,081 s)
+2026-05-11 09:14:40 INFO  PythonRDD:54 - Removing RDD 4 from persistence list
+2026-05-11 09:14:40 INFO  BlockManager:54 - Removing RDD 4
+2026-05-11 09:14:40 INFO  KafkaRDD:54 - Removing RDD 3 from persistence list
+2026-05-11 09:14:40 INFO  BlockManager:54 - Removing RDD 3
+2026-05-11 09:14:40 INFO  ReceivedBlockTracker:54 - Deleting batches: 
+2026-05-11 09:14:40 INFO  InputInfoTracker:54 - remove old batch metadata: 1778490860000 ms
+2026-05-11 09:14:50 INFO  JobScheduler:54 - Starting job streaming job 1778490890000 ms.0 from job set of time 1778490890000 ms
+2026-05-11 09:14:50 INFO  JobScheduler:54 - Added jobs for time 1778490890000 ms
+2026-05-11 09:14:50 INFO  SparkContext:54 - Starting job: runJob at PythonRDD.scala:141
+2026-05-11 09:14:50 INFO  DAGScheduler:54 - Got job 3 (runJob at PythonRDD.scala:141) with 1 output partitions
+2026-05-11 09:14:50 INFO  DAGScheduler:54 - Final stage: ResultStage 3 (runJob at PythonRDD.scala:141)
+2026-05-11 09:14:50 INFO  DAGScheduler:54 - Parents of final stage: List()
+2026-05-11 09:14:50 INFO  DAGScheduler:54 - Missing parents: List()
+2026-05-11 09:14:50 INFO  DAGScheduler:54 - Submitting ResultStage 3 (PythonRDD[11] at RDD at PythonRDD.scala:48), which has no missing parents
+2026-05-11 09:14:50 INFO  MemoryStore:54 - Block broadcast_3 stored as values in memory (estimated size 7.0 KB, free 366.3 MB)
+2026-05-11 09:14:50 INFO  MemoryStore:54 - Block broadcast_3_piece0 stored as bytes in memory (estimated size 3.8 KB, free 366.3 MB)
+2026-05-11 09:14:50 INFO  BlockManagerInfo:54 - Added broadcast_3_piece0 in memory on mipt-client.atp-fivt.org:44756 (size: 3.8 KB, free: 366.3 MB)
+2026-05-11 09:14:50 INFO  SparkContext:54 - Created broadcast 3 from broadcast at DAGScheduler.scala:1039
+2026-05-11 09:14:50 INFO  DAGScheduler:54 - Submitting 1 missing tasks from ResultStage 3 (PythonRDD[11] at RDD at PythonRDD.scala:48) (first 15 tasks are for partitions Vector(0))
+2026-05-11 09:14:50 INFO  TaskSchedulerImpl:54 - Adding task set 3.0 with 1 tasks
+2026-05-11 09:14:50 INFO  TaskSetManager:54 - Starting task 0.0 in stage 3.0 (TID 3, localhost, executor driver, partition 0, ANY, 7792 bytes)
+2026-05-11 09:14:50 INFO  Executor:54 - Running task 0.0 in stage 3.0 (TID 3)
+2026-05-11 09:14:50 INFO  KafkaRDD:54 - Beginning offset 200000 is the same as ending offset skipping bessmertnyjde-topic 0
+2026-05-11 09:14:50 INFO  PythonRunner:54 - Times: total = 38, boot = -9942, init = 9980, finish = 0
+2026-05-11 09:14:50 INFO  PythonRunner:54 - Times: total = 38, boot = -9938, init = 9976, finish = 0
+2026-05-11 09:14:50 INFO  Executor:54 - Finished task 0.0 in stage 3.0 (TID 3). 1235 bytes result sent to driver
+2026-05-11 09:14:50 INFO  TaskSetManager:54 - Finished task 0.0 in stage 3.0 (TID 3) in 44 ms on localhost (executor driver) (1/1)
+2026-05-11 09:14:50 INFO  TaskSchedulerImpl:54 - Removed TaskSet 3.0, whose tasks have all completed, from pool 
+2026-05-11 09:14:50 INFO  DAGScheduler:54 - ResultStage 3 (runJob at PythonRDD.scala:141) finished in 0,050 s
+2026-05-11 09:14:50 INFO  DAGScheduler:54 - Job 3 finished: runJob at PythonRDD.scala:141, took 0,053115 s
+2026-05-11 09:14:50 INFO  JobScheduler:54 - Finished job streaming job 1778490890000 ms.0 from job set of time 1778490890000 ms
+2026-05-11 09:14:50 INFO  JobScheduler:54 - Total delay: 0,077 s for time 1778490890000 ms (execution: 0,065 s)
+2026-05-11 09:14:50 INFO  PythonRDD:54 - Removing RDD 7 from persistence list
+2026-05-11 09:14:50 INFO  BlockManager:54 - Removing RDD 7
+2026-05-11 09:14:50 INFO  KafkaRDD:54 - Removing RDD 6 from persistence list
+2026-05-11 09:14:50 INFO  BlockManager:54 - Removing RDD 6
+2026-05-11 09:14:50 INFO  ReceivedBlockTracker:54 - Deleting batches: 
+2026-05-11 09:14:50 INFO  InputInfoTracker:54 - remove old batch metadata: 1778490870000 ms
+2026-05-11 09:15:00 INFO  JobScheduler:54 - Starting job streaming job 1778490900000 ms.0 from job set of time 1778490900000 ms
+2026-05-11 09:15:00 INFO  JobScheduler:54 - Added jobs for time 1778490900000 ms
+2026-05-11 09:15:00 INFO  SparkContext:54 - Starting job: runJob at PythonRDD.scala:141
+2026-05-11 09:15:00 INFO  DAGScheduler:54 - Got job 4 (runJob at PythonRDD.scala:141) with 1 output partitions
+2026-05-11 09:15:00 INFO  DAGScheduler:54 - Final stage: ResultStage 4 (runJob at PythonRDD.scala:141)
+2026-05-11 09:15:00 INFO  DAGScheduler:54 - Parents of final stage: List()
+2026-05-11 09:15:00 INFO  DAGScheduler:54 - Missing parents: List()
+2026-05-11 09:15:00 INFO  DAGScheduler:54 - Submitting ResultStage 4 (PythonRDD[14] at RDD at PythonRDD.scala:48), which has no missing parents
+2026-05-11 09:15:00 INFO  MemoryStore:54 - Block broadcast_4 stored as values in memory (estimated size 7.0 KB, free 366.3 MB)
+2026-05-11 09:15:00 INFO  MemoryStore:54 - Block broadcast_4_piece0 stored as bytes in memory (estimated size 3.8 KB, free 366.3 MB)
+2026-05-11 09:15:00 INFO  BlockManagerInfo:54 - Added broadcast_4_piece0 in memory on mipt-client.atp-fivt.org:44756 (size: 3.8 KB, free: 366.3 MB)
+2026-05-11 09:15:00 INFO  SparkContext:54 - Created broadcast 4 from broadcast at DAGScheduler.scala:1039
+2026-05-11 09:15:00 INFO  DAGScheduler:54 - Submitting 1 missing tasks from ResultStage 4 (PythonRDD[14] at RDD at PythonRDD.scala:48) (first 15 tasks are for partitions Vector(0))
+2026-05-11 09:15:00 INFO  TaskSchedulerImpl:54 - Adding task set 4.0 with 1 tasks
+2026-05-11 09:15:00 INFO  TaskSetManager:54 - Starting task 0.0 in stage 4.0 (TID 4, localhost, executor driver, partition 0, ANY, 7792 bytes)
+2026-05-11 09:15:00 INFO  Executor:54 - Running task 0.0 in stage 4.0 (TID 4)
+2026-05-11 09:15:00 INFO  KafkaRDD:54 - Beginning offset 200000 is the same as ending offset skipping bessmertnyjde-topic 0
+2026-05-11 09:15:00 INFO  PythonRunner:54 - Times: total = 37, boot = -9950, init = 9987, finish = 0
+2026-05-11 09:15:00 INFO  PythonRunner:54 - Times: total = 41, boot = -9949, init = 9989, finish = 1
+2026-05-11 09:15:00 INFO  Executor:54 - Finished task 0.0 in stage 4.0 (TID 4). 1192 bytes result sent to driver
+2026-05-11 09:15:00 INFO  TaskSetManager:54 - Finished task 0.0 in stage 4.0 (TID 4) in 46 ms on localhost (executor driver) (1/1)
+2026-05-11 09:15:00 INFO  TaskSchedulerImpl:54 - Removed TaskSet 4.0, whose tasks have all completed, from pool 
+2026-05-11 09:15:00 INFO  DAGScheduler:54 - ResultStage 4 (runJob at PythonRDD.scala:141) finished in 0,050 s
+2026-05-11 09:15:00 INFO  DAGScheduler:54 - Job 4 finished: runJob at PythonRDD.scala:141, took 0,052757 s
+2026-05-11 09:15:00 INFO  JobScheduler:54 - Finished job streaming job 1778490900000 ms.0 from job set of time 1778490900000 ms
+2026-05-11 09:15:00 INFO  JobScheduler:54 - Total delay: 0,070 s for time 1778490900000 ms (execution: 0,061 s)
+2026-05-11 09:15:00 INFO  PythonRDD:54 - Removing RDD 10 from persistence list
+2026-05-11 09:15:00 INFO  BlockManager:54 - Removing RDD 10
+2026-05-11 09:15:00 INFO  KafkaRDD:54 - Removing RDD 9 from persistence list
+2026-05-11 09:15:00 INFO  BlockManager:54 - Removing RDD 9
+2026-05-11 09:15:00 INFO  ReceivedBlockTracker:54 - Deleting batches: 
+2026-05-11 09:15:00 INFO  InputInfoTracker:54 - remove old batch metadata: 1778490880000 ms
+2026-05-11 09:15:10 INFO  JobScheduler:54 - Added jobs for time 1778490910000 ms
+2026-05-11 09:15:10 INFO  JobScheduler:54 - Starting job streaming job 1778490910000 ms.0 from job set of time 1778490910000 ms
+2026-05-11 09:15:10 INFO  SparkContext:54 - Starting job: runJob at PythonRDD.scala:141
+2026-05-11 09:15:10 INFO  DAGScheduler:54 - Got job 5 (runJob at PythonRDD.scala:141) with 1 output partitions
+2026-05-11 09:15:10 INFO  DAGScheduler:54 - Final stage: ResultStage 5 (runJob at PythonRDD.scala:141)
+2026-05-11 09:15:10 INFO  DAGScheduler:54 - Parents of final stage: List()
+2026-05-11 09:15:10 INFO  DAGScheduler:54 - Missing parents: List()
+2026-05-11 09:15:10 INFO  DAGScheduler:54 - Submitting ResultStage 5 (PythonRDD[17] at RDD at PythonRDD.scala:48), which has no missing parents
+2026-05-11 09:15:10 INFO  MemoryStore:54 - Block broadcast_5 stored as values in memory (estimated size 7.0 KB, free 366.3 MB)
+2026-05-11 09:15:10 INFO  MemoryStore:54 - Block broadcast_5_piece0 stored as bytes in memory (estimated size 3.8 KB, free 366.3 MB)
+2026-05-11 09:15:10 INFO  BlockManagerInfo:54 - Added broadcast_5_piece0 in memory on mipt-client.atp-fivt.org:44756 (size: 3.8 KB, free: 366.3 MB)
+2026-05-11 09:15:10 INFO  SparkContext:54 - Created broadcast 5 from broadcast at DAGScheduler.scala:1039
+2026-05-11 09:15:10 INFO  DAGScheduler:54 - Submitting 1 missing tasks from ResultStage 5 (PythonRDD[17] at RDD at PythonRDD.scala:48) (first 15 tasks are for partitions Vector(0))
+2026-05-11 09:15:10 INFO  TaskSchedulerImpl:54 - Adding task set 5.0 with 1 tasks
+2026-05-11 09:15:10 INFO  TaskSetManager:54 - Starting task 0.0 in stage 5.0 (TID 5, localhost, executor driver, partition 0, ANY, 7792 bytes)
+2026-05-11 09:15:10 INFO  Executor:54 - Running task 0.0 in stage 5.0 (TID 5)
+2026-05-11 09:15:10 INFO  KafkaRDD:54 - Beginning offset 200000 is the same as ending offset skipping bessmertnyjde-topic 0
+2026-05-11 09:15:10 INFO  PythonRunner:54 - Times: total = 38, boot = -9962, init = 10000, finish = 0
+2026-05-11 09:15:10 INFO  PythonRunner:54 - Times: total = 41, boot = -9959, init = 9999, finish = 1
+2026-05-11 09:15:10 INFO  Executor:54 - Finished task 0.0 in stage 5.0 (TID 5). 1235 bytes result sent to driver
+2026-05-11 09:15:10 INFO  TaskSetManager:54 - Finished task 0.0 in stage 5.0 (TID 5) in 46 ms on localhost (executor driver) (1/1)
+2026-05-11 09:15:10 INFO  TaskSchedulerImpl:54 - Removed TaskSet 5.0, whose tasks have all completed, from pool 
+2026-05-11 09:15:10 INFO  DAGScheduler:54 - ResultStage 5 (runJob at PythonRDD.scala:141) finished in 0,051 s
+2026-05-11 09:15:10 INFO  DAGScheduler:54 - Job 5 finished: runJob at PythonRDD.scala:141, took 0,053792 s
+2026-05-11 09:15:10 INFO  JobScheduler:54 - Finished job streaming job 1778490910000 ms.0 from job set of time 1778490910000 ms
+2026-05-11 09:15:10 INFO  JobScheduler:54 - Total delay: 0,074 s for time 1778490910000 ms (execution: 0,064 s)
+2026-05-11 09:15:10 INFO  PythonRDD:54 - Removing RDD 13 from persistence list
+2026-05-11 09:15:10 INFO  BlockManager:54 - Removing RDD 13
+2026-05-11 09:15:10 INFO  KafkaRDD:54 - Removing RDD 12 from persistence list
+2026-05-11 09:15:10 INFO  BlockManager:54 - Removing RDD 12
+2026-05-11 09:15:10 INFO  ReceivedBlockTracker:54 - Deleting batches: 
+2026-05-11 09:15:10 INFO  InputInfoTracker:54 - remove old batch metadata: 1778490890000 ms
+2026-05-11 09:15:20 INFO  JobScheduler:54 - Added jobs for time 1778490920000 ms
+2026-05-11 09:15:20 INFO  JobScheduler:54 - Starting job streaming job 1778490920000 ms.0 from job set of time 1778490920000 ms
+2026-05-11 09:15:20 INFO  SparkContext:54 - Starting job: runJob at PythonRDD.scala:141
+2026-05-11 09:15:20 INFO  DAGScheduler:54 - Got job 6 (runJob at PythonRDD.scala:141) with 1 output partitions
+2026-05-11 09:15:20 INFO  DAGScheduler:54 - Final stage: ResultStage 6 (runJob at PythonRDD.scala:141)
+2026-05-11 09:15:20 INFO  DAGScheduler:54 - Parents of final stage: List()
+2026-05-11 09:15:20 INFO  DAGScheduler:54 - Missing parents: List()
+2026-05-11 09:15:20 INFO  DAGScheduler:54 - Submitting ResultStage 6 (PythonRDD[20] at RDD at PythonRDD.scala:48), which has no missing parents
+2026-05-11 09:15:20 INFO  MemoryStore:54 - Block broadcast_6 stored as values in memory (estimated size 7.0 KB, free 366.3 MB)
+2026-05-11 09:15:20 INFO  MemoryStore:54 - Block broadcast_6_piece0 stored as bytes in memory (estimated size 3.8 KB, free 366.2 MB)
+2026-05-11 09:15:20 INFO  BlockManagerInfo:54 - Added broadcast_6_piece0 in memory on mipt-client.atp-fivt.org:44756 (size: 3.8 KB, free: 366.3 MB)
+2026-05-11 09:15:20 INFO  SparkContext:54 - Created broadcast 6 from broadcast at DAGScheduler.scala:1039
+2026-05-11 09:15:20 INFO  DAGScheduler:54 - Submitting 1 missing tasks from ResultStage 6 (PythonRDD[20] at RDD at PythonRDD.scala:48) (first 15 tasks are for partitions Vector(0))
+2026-05-11 09:15:20 INFO  TaskSchedulerImpl:54 - Adding task set 6.0 with 1 tasks
+2026-05-11 09:15:20 INFO  TaskSetManager:54 - Starting task 0.0 in stage 6.0 (TID 6, localhost, executor driver, partition 0, ANY, 7792 bytes)
+2026-05-11 09:15:20 INFO  Executor:54 - Running task 0.0 in stage 6.0 (TID 6)
+2026-05-11 09:15:20 INFO  KafkaRDD:54 - Beginning offset 200000 is the same as ending offset skipping bessmertnyjde-topic 0
+2026-05-11 09:15:20 INFO  PythonRunner:54 - Times: total = 38, boot = -9953, init = 9991, finish = 0
+2026-05-11 09:15:20 INFO  PythonRunner:54 - Times: total = 38, boot = -9950, init = 9988, finish = 0
+2026-05-11 09:15:20 INFO  Executor:54 - Finished task 0.0 in stage 6.0 (TID 6). 1235 bytes result sent to driver
+2026-05-11 09:15:20 INFO  TaskSetManager:54 - Finished task 0.0 in stage 6.0 (TID 6) in 42 ms on localhost (executor driver) (1/1)
+2026-05-11 09:15:20 INFO  TaskSchedulerImpl:54 - Removed TaskSet 6.0, whose tasks have all completed, from pool 
+2026-05-11 09:15:20 INFO  DAGScheduler:54 - ResultStage 6 (runJob at PythonRDD.scala:141) finished in 0,047 s
+2026-05-11 09:15:20 INFO  DAGScheduler:54 - Job 6 finished: runJob at PythonRDD.scala:141, took 0,048926 s
+2026-05-11 09:15:20 INFO  JobScheduler:54 - Finished job streaming job 1778490920000 ms.0 from job set of time 1778490920000 ms
+2026-05-11 09:15:20 INFO  JobScheduler:54 - Total delay: 0,067 s for time 1778490920000 ms (execution: 0,058 s)
+2026-05-11 09:15:20 INFO  PythonRDD:54 - Removing RDD 16 from persistence list
+2026-05-11 09:15:20 INFO  BlockManager:54 - Removing RDD 16
+2026-05-11 09:15:20 INFO  KafkaRDD:54 - Removing RDD 15 from persistence list
+2026-05-11 09:15:20 INFO  BlockManager:54 - Removing RDD 15
+2026-05-11 09:15:20 INFO  ReceivedBlockTracker:54 - Deleting batches: 
+2026-05-11 09:15:20 INFO  InputInfoTracker:54 - remove old batch metadata: 1778490900000 ms
+2026-05-11 09:15:30 INFO  JobScheduler:54 - Added jobs for time 1778490930000 ms
+2026-05-11 09:15:30 INFO  JobScheduler:54 - Starting job streaming job 1778490930000 ms.0 from job set of time 1778490930000 ms
+2026-05-11 09:15:30 INFO  SparkContext:54 - Starting job: runJob at PythonRDD.scala:141
+2026-05-11 09:15:30 INFO  DAGScheduler:54 - Got job 7 (runJob at PythonRDD.scala:141) with 1 output partitions
+2026-05-11 09:15:30 INFO  DAGScheduler:54 - Final stage: ResultStage 7 (runJob at PythonRDD.scala:141)
+2026-05-11 09:15:30 INFO  DAGScheduler:54 - Parents of final stage: List()
+2026-05-11 09:15:30 INFO  DAGScheduler:54 - Missing parents: List()
+2026-05-11 09:15:30 INFO  DAGScheduler:54 - Submitting ResultStage 7 (PythonRDD[23] at RDD at PythonRDD.scala:48), which has no missing parents
+2026-05-11 09:15:30 INFO  MemoryStore:54 - Block broadcast_7 stored as values in memory (estimated size 7.0 KB, free 366.2 MB)
+2026-05-11 09:15:30 INFO  MemoryStore:54 - Block broadcast_7_piece0 stored as bytes in memory (estimated size 3.8 KB, free 366.2 MB)
+2026-05-11 09:15:30 INFO  BlockManagerInfo:54 - Added broadcast_7_piece0 in memory on mipt-client.atp-fivt.org:44756 (size: 3.8 KB, free: 366.3 MB)
+2026-05-11 09:15:30 INFO  SparkContext:54 - Created broadcast 7 from broadcast at DAGScheduler.scala:1039
+2026-05-11 09:15:30 INFO  DAGScheduler:54 - Submitting 1 missing tasks from ResultStage 7 (PythonRDD[23] at RDD at PythonRDD.scala:48) (first 15 tasks are for partitions Vector(0))
+2026-05-11 09:15:30 INFO  TaskSchedulerImpl:54 - Adding task set 7.0 with 1 tasks
+2026-05-11 09:15:30 INFO  TaskSetManager:54 - Starting task 0.0 in stage 7.0 (TID 7, localhost, executor driver, partition 0, ANY, 7792 bytes)
+2026-05-11 09:15:30 INFO  Executor:54 - Running task 0.0 in stage 7.0 (TID 7)
+2026-05-11 09:15:30 INFO  KafkaRDD:54 - Beginning offset 200000 is the same as ending offset skipping bessmertnyjde-topic 0
+2026-05-11 09:15:30 INFO  PythonRunner:54 - Times: total = 41, boot = -9958, init = 9999, finish = 0
+2026-05-11 09:15:30 INFO  PythonRunner:54 - Times: total = 41, boot = -9958, init = 9999, finish = 0
+2026-05-11 09:15:30 INFO  Executor:54 - Finished task 0.0 in stage 7.0 (TID 7). 1235 bytes result sent to driver
+2026-05-11 09:15:30 INFO  TaskSetManager:54 - Finished task 0.0 in stage 7.0 (TID 7) in 45 ms on localhost (executor driver) (1/1)
+2026-05-11 09:15:30 INFO  TaskSchedulerImpl:54 - Removed TaskSet 7.0, whose tasks have all completed, from pool 
+2026-05-11 09:15:30 INFO  DAGScheduler:54 - ResultStage 7 (runJob at PythonRDD.scala:141) finished in 0,050 s
+2026-05-11 09:15:30 INFO  DAGScheduler:54 - Job 7 finished: runJob at PythonRDD.scala:141, took 0,052509 s
+2026-05-11 09:15:30 INFO  JobScheduler:54 - Finished job streaming job 1778490930000 ms.0 from job set of time 1778490930000 ms
+2026-05-11 09:15:30 INFO  JobScheduler:54 - Total delay: 0,071 s for time 1778490930000 ms (execution: 0,062 s)
+2026-05-11 09:15:30 INFO  PythonRDD:54 - Removing RDD 19 from persistence list
+2026-05-11 09:15:30 INFO  BlockManager:54 - Removing RDD 19
+2026-05-11 09:15:30 INFO  KafkaRDD:54 - Removing RDD 18 from persistence list
+2026-05-11 09:15:30 INFO  BlockManager:54 - Removing RDD 18
+2026-05-11 09:15:30 INFO  ReceivedBlockTracker:54 - Deleting batches: 
+2026-05-11 09:15:30 INFO  InputInfoTracker:54 - remove old batch metadata: 1778490910000 ms
+2026-05-11 09:15:40 INFO  JobScheduler:54 - Added jobs for time 1778490940000 ms
+2026-05-11 09:15:40 INFO  JobScheduler:54 - Starting job streaming job 1778490940000 ms.0 from job set of time 1778490940000 ms
+2026-05-11 09:15:40 INFO  SparkContext:54 - Starting job: runJob at PythonRDD.scala:141
+2026-05-11 09:15:40 INFO  DAGScheduler:54 - Got job 8 (runJob at PythonRDD.scala:141) with 1 output partitions
+2026-05-11 09:15:40 INFO  DAGScheduler:54 - Final stage: ResultStage 8 (runJob at PythonRDD.scala:141)
+2026-05-11 09:15:40 INFO  DAGScheduler:54 - Parents of final stage: List()
+2026-05-11 09:15:40 INFO  DAGScheduler:54 - Missing parents: List()
+2026-05-11 09:15:40 INFO  DAGScheduler:54 - Submitting ResultStage 8 (PythonRDD[26] at RDD at PythonRDD.scala:48), which has no missing parents
+2026-05-11 09:15:40 INFO  MemoryStore:54 - Block broadcast_8 stored as values in memory (estimated size 7.0 KB, free 366.2 MB)
+2026-05-11 09:15:40 INFO  MemoryStore:54 - Block broadcast_8_piece0 stored as bytes in memory (estimated size 3.8 KB, free 366.2 MB)
+2026-05-11 09:15:40 INFO  BlockManagerInfo:54 - Added broadcast_8_piece0 in memory on mipt-client.atp-fivt.org:44756 (size: 3.8 KB, free: 366.3 MB)
+2026-05-11 09:15:40 INFO  SparkContext:54 - Created broadcast 8 from broadcast at DAGScheduler.scala:1039
+2026-05-11 09:15:40 INFO  DAGScheduler:54 - Submitting 1 missing tasks from ResultStage 8 (PythonRDD[26] at RDD at PythonRDD.scala:48) (first 15 tasks are for partitions Vector(0))
+2026-05-11 09:15:40 INFO  TaskSchedulerImpl:54 - Adding task set 8.0 with 1 tasks
+2026-05-11 09:15:40 INFO  TaskSetManager:54 - Starting task 0.0 in stage 8.0 (TID 8, localhost, executor driver, partition 0, ANY, 7792 bytes)
+2026-05-11 09:15:40 INFO  Executor:54 - Running task 0.0 in stage 8.0 (TID 8)
+2026-05-11 09:15:40 INFO  KafkaRDD:54 - Beginning offset 200000 is the same as ending offset skipping bessmertnyjde-topic 0
+2026-05-11 09:15:40 INFO  PythonRunner:54 - Times: total = 39, boot = -9956, init = 9995, finish = 0
+2026-05-11 09:15:40 INFO  PythonRunner:54 - Times: total = 46, boot = -9957, init = 10002, finish = 1
+2026-05-11 09:15:40 INFO  Executor:54 - Finished task 0.0 in stage 8.0 (TID 8). 1192 bytes result sent to driver
+2026-05-11 09:15:40 INFO  TaskSetManager:54 - Finished task 0.0 in stage 8.0 (TID 8) in 51 ms on localhost (executor driver) (1/1)
+2026-05-11 09:15:40 INFO  TaskSchedulerImpl:54 - Removed TaskSet 8.0, whose tasks have all completed, from pool 
+2026-05-11 09:15:40 INFO  DAGScheduler:54 - ResultStage 8 (runJob at PythonRDD.scala:141) finished in 0,055 s
+2026-05-11 09:15:40 INFO  DAGScheduler:54 - Job 8 finished: runJob at PythonRDD.scala:141, took 0,058029 s
+2026-05-11 09:15:40 INFO  JobScheduler:54 - Finished job streaming job 1778490940000 ms.0 from job set of time 1778490940000 ms
+2026-05-11 09:15:40 INFO  JobScheduler:54 - Total delay: 0,078 s for time 1778490940000 ms (execution: 0,068 s)
+2026-05-11 09:15:40 INFO  PythonRDD:54 - Removing RDD 22 from persistence list
+2026-05-11 09:15:40 INFO  BlockManager:54 - Removing RDD 22
+2026-05-11 09:15:40 INFO  KafkaRDD:54 - Removing RDD 21 from persistence list
+2026-05-11 09:15:40 INFO  BlockManager:54 - Removing RDD 21
+2026-05-11 09:15:40 INFO  ReceivedBlockTracker:54 - Deleting batches: 
+2026-05-11 09:15:40 INFO  InputInfoTracker:54 - remove old batch metadata: 1778490920000 ms
+2026-05-11 09:15:50 INFO  JobScheduler:54 - Added jobs for time 1778490950000 ms
+2026-05-11 09:15:50 INFO  JobScheduler:54 - Starting job streaming job 1778490950000 ms.0 from job set of time 1778490950000 ms
+2026-05-11 09:15:50 INFO  SparkContext:54 - Starting job: runJob at PythonRDD.scala:141
+2026-05-11 09:15:50 INFO  DAGScheduler:54 - Got job 9 (runJob at PythonRDD.scala:141) with 1 output partitions
+2026-05-11 09:15:50 INFO  DAGScheduler:54 - Final stage: ResultStage 9 (runJob at PythonRDD.scala:141)
+2026-05-11 09:15:50 INFO  DAGScheduler:54 - Parents of final stage: List()
+2026-05-11 09:15:50 INFO  DAGScheduler:54 - Missing parents: List()
+2026-05-11 09:15:50 INFO  DAGScheduler:54 - Submitting ResultStage 9 (PythonRDD[29] at RDD at PythonRDD.scala:48), which has no missing parents
+2026-05-11 09:15:50 INFO  MemoryStore:54 - Block broadcast_9 stored as values in memory (estimated size 7.0 KB, free 366.2 MB)
+2026-05-11 09:15:50 INFO  MemoryStore:54 - Block broadcast_9_piece0 stored as bytes in memory (estimated size 3.8 KB, free 366.2 MB)
+2026-05-11 09:15:50 INFO  BlockManagerInfo:54 - Added broadcast_9_piece0 in memory on mipt-client.atp-fivt.org:44756 (size: 3.8 KB, free: 366.3 MB)
+2026-05-11 09:15:50 INFO  SparkContext:54 - Created broadcast 9 from broadcast at DAGScheduler.scala:1039
+2026-05-11 09:15:50 INFO  DAGScheduler:54 - Submitting 1 missing tasks from ResultStage 9 (PythonRDD[29] at RDD at PythonRDD.scala:48) (first 15 tasks are for partitions Vector(0))
+2026-05-11 09:15:50 INFO  TaskSchedulerImpl:54 - Adding task set 9.0 with 1 tasks
+2026-05-11 09:15:50 INFO  TaskSetManager:54 - Starting task 0.0 in stage 9.0 (TID 9, localhost, executor driver, partition 0, ANY, 7792 bytes)
+2026-05-11 09:15:50 INFO  Executor:54 - Running task 0.0 in stage 9.0 (TID 9)
+2026-05-11 09:15:50 INFO  KafkaRDD:54 - Beginning offset 200000 is the same as ending offset skipping bessmertnyjde-topic 0
+2026-05-11 09:15:50 INFO  PythonRunner:54 - Times: total = 38, boot = -9957, init = 9994, finish = 1
+2026-05-11 09:15:50 INFO  PythonRunner:54 - Times: total = 41, boot = -9950, init = 9991, finish = 0
+2026-05-11 09:15:50 INFO  Executor:54 - Finished task 0.0 in stage 9.0 (TID 9). 1235 bytes result sent to driver
+2026-05-11 09:15:50 INFO  TaskSetManager:54 - Finished task 0.0 in stage 9.0 (TID 9) in 45 ms on localhost (executor driver) (1/1)
+2026-05-11 09:15:50 INFO  TaskSchedulerImpl:54 - Removed TaskSet 9.0, whose tasks have all completed, from pool 
+2026-05-11 09:15:50 INFO  DAGScheduler:54 - ResultStage 9 (runJob at PythonRDD.scala:141) finished in 0,051 s
+2026-05-11 09:15:50 INFO  DAGScheduler:54 - Job 9 finished: runJob at PythonRDD.scala:141, took 0,052798 s
+2026-05-11 09:15:50 INFO  JobScheduler:54 - Finished job streaming job 1778490950000 ms.0 from job set of time 1778490950000 ms
+2026-05-11 09:15:50 INFO  JobScheduler:54 - Total delay: 0,074 s for time 1778490950000 ms (execution: 0,064 s)
+2026-05-11 09:15:50 INFO  PythonRDD:54 - Removing RDD 25 from persistence list
+2026-05-11 09:15:50 INFO  BlockManager:54 - Removing RDD 25
+2026-05-11 09:15:50 INFO  KafkaRDD:54 - Removing RDD 24 from persistence list
+2026-05-11 09:15:50 INFO  BlockManager:54 - Removing RDD 24
+2026-05-11 09:15:50 INFO  ReceivedBlockTracker:54 - Deleting batches: 
+2026-05-11 09:15:50 INFO  InputInfoTracker:54 - remove old batch metadata: 1778490930000 ms
+2026-05-11 09:16:00 INFO  JobScheduler:54 - Added jobs for time 1778490960000 ms
+2026-05-11 09:16:00 INFO  JobScheduler:54 - Starting job streaming job 1778490960000 ms.0 from job set of time 1778490960000 ms
+2026-05-11 09:16:00 INFO  SparkContext:54 - Starting job: runJob at PythonRDD.scala:141
+2026-05-11 09:16:00 INFO  DAGScheduler:54 - Got job 10 (runJob at PythonRDD.scala:141) with 1 output partitions
+2026-05-11 09:16:00 INFO  DAGScheduler:54 - Final stage: ResultStage 10 (runJob at PythonRDD.scala:141)
+2026-05-11 09:16:00 INFO  DAGScheduler:54 - Parents of final stage: List()
+2026-05-11 09:16:00 INFO  DAGScheduler:54 - Missing parents: List()
+2026-05-11 09:16:00 INFO  DAGScheduler:54 - Submitting ResultStage 10 (PythonRDD[32] at RDD at PythonRDD.scala:48), which has no missing parents
+2026-05-11 09:16:00 INFO  MemoryStore:54 - Block broadcast_10 stored as values in memory (estimated size 7.0 KB, free 366.2 MB)
+2026-05-11 09:16:00 INFO  MemoryStore:54 - Block broadcast_10_piece0 stored as bytes in memory (estimated size 3.8 KB, free 366.2 MB)
+2026-05-11 09:16:00 INFO  BlockManagerInfo:54 - Added broadcast_10_piece0 in memory on mipt-client.atp-fivt.org:44756 (size: 3.8 KB, free: 366.3 MB)
+2026-05-11 09:16:00 INFO  SparkContext:54 - Created broadcast 10 from broadcast at DAGScheduler.scala:1039
+2026-05-11 09:16:00 INFO  DAGScheduler:54 - Submitting 1 missing tasks from ResultStage 10 (PythonRDD[32] at RDD at PythonRDD.scala:48) (first 15 tasks are for partitions Vector(0))
+2026-05-11 09:16:00 INFO  TaskSchedulerImpl:54 - Adding task set 10.0 with 1 tasks
+2026-05-11 09:16:00 INFO  TaskSetManager:54 - Starting task 0.0 in stage 10.0 (TID 10, localhost, executor driver, partition 0, ANY, 7792 bytes)
+2026-05-11 09:16:00 INFO  Executor:54 - Running task 0.0 in stage 10.0 (TID 10)
+2026-05-11 09:16:00 INFO  KafkaRDD:54 - Beginning offset 200000 is the same as ending offset skipping bessmertnyjde-topic 0
+2026-05-11 09:16:00 INFO  PythonRunner:54 - Times: total = 38, boot = -9953, init = 9991, finish = 0
+2026-05-11 09:16:00 INFO  PythonRunner:54 - Times: total = 46, boot = -9950, init = 9995, finish = 1
+2026-05-11 09:16:00 INFO  Executor:54 - Finished task 0.0 in stage 10.0 (TID 10). 1235 bytes result sent to driver
+2026-05-11 09:16:00 INFO  TaskSetManager:54 - Finished task 0.0 in stage 10.0 (TID 10) in 49 ms on localhost (executor driver) (1/1)
+2026-05-11 09:16:00 INFO  TaskSchedulerImpl:54 - Removed TaskSet 10.0, whose tasks have all completed, from pool 
+2026-05-11 09:16:00 INFO  DAGScheduler:54 - ResultStage 10 (runJob at PythonRDD.scala:141) finished in 0,054 s
+2026-05-11 09:16:00 INFO  DAGScheduler:54 - Job 10 finished: runJob at PythonRDD.scala:141, took 0,056000 s
+2026-05-11 09:16:00 INFO  JobScheduler:54 - Finished job streaming job 1778490960000 ms.0 from job set of time 1778490960000 ms
+2026-05-11 09:16:00 INFO  JobScheduler:54 - Total delay: 0,074 s for time 1778490960000 ms (execution: 0,065 s)
+2026-05-11 09:16:00 INFO  PythonRDD:54 - Removing RDD 28 from persistence list
+2026-05-11 09:16:00 INFO  BlockManager:54 - Removing RDD 28
+2026-05-11 09:16:00 INFO  KafkaRDD:54 - Removing RDD 27 from persistence list
+2026-05-11 09:16:00 INFO  BlockManager:54 - Removing RDD 27
+2026-05-11 09:16:00 INFO  ReceivedBlockTracker:54 - Deleting batches: 
+2026-05-11 09:16:00 INFO  InputInfoTracker:54 - remove old batch metadata: 1778490940000 ms
+2026-05-11 09:16:10 INFO  JobScheduler:54 - Added jobs for time 1778490970000 ms
+2026-05-11 09:16:10 INFO  JobScheduler:54 - Starting job streaming job 1778490970000 ms.0 from job set of time 1778490970000 ms
+2026-05-11 09:16:10 INFO  SparkContext:54 - Starting job: runJob at PythonRDD.scala:141
+2026-05-11 09:16:10 INFO  DAGScheduler:54 - Got job 11 (runJob at PythonRDD.scala:141) with 1 output partitions
+2026-05-11 09:16:10 INFO  DAGScheduler:54 - Final stage: ResultStage 11 (runJob at PythonRDD.scala:141)
+2026-05-11 09:16:10 INFO  DAGScheduler:54 - Parents of final stage: List()
+2026-05-11 09:16:10 INFO  DAGScheduler:54 - Missing parents: List()
+2026-05-11 09:16:10 INFO  DAGScheduler:54 - Submitting ResultStage 11 (PythonRDD[35] at RDD at PythonRDD.scala:48), which has no missing parents
+2026-05-11 09:16:10 INFO  MemoryStore:54 - Block broadcast_11 stored as values in memory (estimated size 7.0 KB, free 366.2 MB)
+2026-05-11 09:16:10 INFO  MemoryStore:54 - Block broadcast_11_piece0 stored as bytes in memory (estimated size 3.8 KB, free 366.2 MB)
+2026-05-11 09:16:10 INFO  BlockManagerInfo:54 - Added broadcast_11_piece0 in memory on mipt-client.atp-fivt.org:44756 (size: 3.8 KB, free: 366.3 MB)
+2026-05-11 09:16:10 INFO  SparkContext:54 - Created broadcast 11 from broadcast at DAGScheduler.scala:1039
+2026-05-11 09:16:10 INFO  DAGScheduler:54 - Submitting 1 missing tasks from ResultStage 11 (PythonRDD[35] at RDD at PythonRDD.scala:48) (first 15 tasks are for partitions Vector(0))
+2026-05-11 09:16:10 INFO  TaskSchedulerImpl:54 - Adding task set 11.0 with 1 tasks
+2026-05-11 09:16:10 INFO  TaskSetManager:54 - Starting task 0.0 in stage 11.0 (TID 11, localhost, executor driver, partition 0, ANY, 7792 bytes)
+2026-05-11 09:16:10 INFO  Executor:54 - Running task 0.0 in stage 11.0 (TID 11)
+2026-05-11 09:16:10 INFO  KafkaRDD:54 - Beginning offset 200000 is the same as ending offset skipping bessmertnyjde-topic 0
+2026-05-11 09:16:10 INFO  PythonRunner:54 - Times: total = 38, boot = -9957, init = 9995, finish = 0
+2026-05-11 09:16:10 INFO  PythonRunner:54 - Times: total = 41, boot = -9951, init = 9991, finish = 1
+2026-05-11 09:16:10 INFO  Executor:54 - Finished task 0.0 in stage 11.0 (TID 11). 1192 bytes result sent to driver
+2026-05-11 09:16:10 INFO  TaskSetManager:54 - Finished task 0.0 in stage 11.0 (TID 11) in 44 ms on localhost (executor driver) (1/1)
+2026-05-11 09:16:10 INFO  TaskSchedulerImpl:54 - Removed TaskSet 11.0, whose tasks have all completed, from pool 
+2026-05-11 09:16:10 INFO  DAGScheduler:54 - ResultStage 11 (runJob at PythonRDD.scala:141) finished in 0,049 s
+2026-05-11 09:16:10 INFO  DAGScheduler:54 - Job 11 finished: runJob at PythonRDD.scala:141, took 0,051462 s
+2026-05-11 09:16:10 INFO  JobScheduler:54 - Finished job streaming job 1778490970000 ms.0 from job set of time 1778490970000 ms
+2026-05-11 09:16:10 INFO  JobScheduler:54 - Total delay: 0,070 s for time 1778490970000 ms (execution: 0,061 s)
+2026-05-11 09:16:10 INFO  PythonRDD:54 - Removing RDD 31 from persistence list
+2026-05-11 09:16:10 INFO  BlockManager:54 - Removing RDD 31
+2026-05-11 09:16:10 INFO  KafkaRDD:54 - Removing RDD 30 from persistence list
+2026-05-11 09:16:10 INFO  BlockManager:54 - Removing RDD 30
+2026-05-11 09:16:10 INFO  ReceivedBlockTracker:54 - Deleting batches: 
+2026-05-11 09:16:10 INFO  InputInfoTracker:54 - remove old batch metadata: 1778490950000 ms
+('seg_firefox', 0)
+('seg_iphone', 0)
+('seg_windows', 0)
+2026-05-11 09:16:12 INFO  StreamingContext:54 - Invoking stop(stopGracefully=false) from shutdown hook
+2026-05-11 09:16:12 INFO  ReceiverTracker:54 - ReceiverTracker stopped
+2026-05-11 09:16:12 INFO  JobGenerator:54 - Stopping JobGenerator immediately
+2026-05-11 09:16:12 INFO  RecurringTimer:54 - Stopped timer for JobGenerator after time 1778490970000
+2026-05-11 09:16:12 INFO  JobGenerator:54 - Stopped JobGenerator
+2026-05-11 09:16:12 INFO  JobScheduler:54 - Stopped JobScheduler
+2026-05-11 09:16:12 INFO  ContextHandler:910 - Stopped o.s.j.s.ServletContextHandler@3acb1484{/streaming,null,UNAVAILABLE,@Spark}
+2026-05-11 09:16:12 INFO  ContextHandler:910 - Stopped o.s.j.s.ServletContextHandler@6a6dc543{/streaming/batch,null,UNAVAILABLE,@Spark}
+2026-05-11 09:16:12 INFO  ContextHandler:910 - Stopped o.s.j.s.ServletContextHandler@4f5b4cfb{/static/streaming,null,UNAVAILABLE,@Spark}
+2026-05-11 09:16:12 INFO  StreamingContext:54 - StreamingContext stopped successfully
+2026-05-11 09:16:12 INFO  SparkContext:54 - Invoking stop() from shutdown hook
+2026-05-11 09:16:12 INFO  AbstractConnector:318 - Stopped Spark@13abf801{HTTP/1.1,[http/1.1]}{0.0.0.0:4042}
+2026-05-11 09:16:12 INFO  SparkUI:54 - Stopped Spark web UI at http://mipt-client.atp-fivt.org:4042
+2026-05-11 09:16:12 INFO  MapOutputTrackerMasterEndpoint:54 - MapOutputTrackerMasterEndpoint stopped!
+2026-05-11 09:16:12 INFO  MemoryStore:54 - MemoryStore cleared
+2026-05-11 09:16:12 INFO  BlockManager:54 - BlockManager stopped
+2026-05-11 09:16:12 INFO  BlockManagerMaster:54 - BlockManagerMaster stopped
+2026-05-11 09:16:12 INFO  OutputCommitCoordinator$OutputCommitCoordinatorEndpoint:54 - OutputCommitCoordinator stopped!
+2026-05-11 09:16:12 INFO  SparkContext:54 - Successfully stopped SparkContext
+2026-05-11 09:16:12 INFO  ShutdownHookManager:54 - Shutdown hook called
+2026-05-11 09:16:12 INFO  ShutdownHookManager:54 - Deleting directory /tmp/spark-9a0ef47b-09af-47df-a815-909a517454ce/pyspark-12706a6b-5ec1-4f0d-9900-dcf4fb7f6340
+2026-05-11 09:16:12 INFO  ShutdownHookManager:54 - Deleting directory /tmp/spark-9a0ef47b-09af-47df-a815-909a517454ce
+2026-05-11 09:16:12 INFO  ShutdownHookManager:54 - Deleting directory /tmp/spark-7e2c6a5d-4c1e-43c0-ac0f-6917d78ec19b
