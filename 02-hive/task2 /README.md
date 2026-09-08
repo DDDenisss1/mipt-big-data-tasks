@@ -1,4 +1,4 @@
-# Hive Task: Analysis of KKT Transaction Data
+# 🔥 Hive Task: Analysis of KKT Transaction Data
 
 *Учебная задача курса "Хранение и обработка больших объемов данных", ФПМИ МФТИ, 2026*
 
