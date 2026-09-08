@@ -1,4 +1,4 @@
-# Spark Task: Collocation Extraction with NPMI
+# 🔥 Spark Task: Collocation Extraction with NPMI
 
 *Учебная задача курса "Хранение и обработка больших объемов данных", ФПМИ МФТИ, 2026*
 
