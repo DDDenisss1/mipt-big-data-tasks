@@ -1,4 +1,4 @@
-# MapReduce Task 2: Player Mortality Analysis in Game Sessions
+# 🔥 MapReduce Task 2: Player Mortality Analysis in Game Sessions
 
 *Учебная задача курса "Хранение и обработка больших объемов данных", ФПМИ МФТИ, 2026*
 
